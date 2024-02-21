@@ -1,0 +1,7 @@
+pandas
+numpy
+streamlit
+streamlit-dynamic-filters
+streamlit-option-menu
+streamlit-extras
+plotly
