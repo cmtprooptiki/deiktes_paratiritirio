@@ -1149,7 +1149,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -1159,7 +1159,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
     ###################################################################################################################################################################
       
