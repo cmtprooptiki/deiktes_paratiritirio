@@ -486,18 +486,18 @@ def main():
       #dynamic_filters.display_df()
   ######################################################################################################################################################################
       #ΕΞΕΤΑΣΗ 2:
-      # with stylable_container(
-        # key="Ergastiriakes1",
-            # css_styles="""
-                # {
-                    # background-color: white;
-                    # border: 1px solid #DCDCDC;
-                    # border-radius: 10px;
-                    # padding: 0.5% 2.5% 0.5% 0.5%;
+      with stylable_container(
+        key="Ergastiriakes1",
+            css_styles="""
+                {
+                    background-color: white;
+                    border: 1px solid #DCDCDC;
+                    border-radius: 10px;
+                    padding: 0.5% 2.5% 0.5% 0.5%;
                     
-                # }
-                # """,
-        # ):
+                }
+                """,
+        ):
       #with st.container(border=True):
         st.subheader("Αιματοκρίτης (HT%):")
         col1,col2 = st.columns(2)
@@ -524,7 +524,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -535,7 +535,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
         
     ###################################################################################################################################################################
       
