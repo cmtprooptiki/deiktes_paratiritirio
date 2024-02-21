@@ -30,11 +30,11 @@ def main():
 
   #Read the data:
   # Export from vidavo:
-  df=pd.read_excel("C:\\Users\\Vagelis\\Desktop\\str_app\\test_for_cat_creations.xlsx")
+  df=pd.read_excel("test_for_cat_creations.xlsx")
   #st.write(df)
 
   # Lista Ergazomenwn:
-  lista_erg=pd.read_excel("C:\\Users\\Vagelis\\Desktop\\str_app\\lista_ergazomenwn.xlsx")
+  lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
   #st.write(lista_erg)
 
   #Merging df with lista ergazomenwn
