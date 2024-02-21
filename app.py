@@ -296,7 +296,7 @@ def main():
         fig.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white',legend=dict(orientation="h",yanchor="bottom",y=1.02,xanchor="right",x=1))
         fig.update_layout(hoverlabel_font_size=16)
         fig.update_layout(legend_title_font_size=15, legend_font_size=15)
-        st.plotly_chart(fig, use_container_width=False,config={'displayModeBar': False})
+        st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
     #Working Section
     with col2:
       with stylable_container(
@@ -332,7 +332,7 @@ def main():
         fig.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white',legend=dict(orientation="h",yanchor="bottom",y=1.02,xanchor="right",x=1))
         fig.update_layout(hoverlabel_font_size=16)
         fig.update_layout(legend_title_font_size=15, legend_font_size=15)
-        st.plotly_chart(fig, use_container_width=False,config={'displayModeBar': False})
+        st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
     #Hlikiakh katanomh
     with stylable_container(
         key="Overview-Hlikia",
