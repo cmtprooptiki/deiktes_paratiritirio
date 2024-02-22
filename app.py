@@ -502,35 +502,75 @@ def main():
         col1,col2 = st.columns(2)
 
         with col1:
-          #Times gia synartisi
-          try:
-            val=round((df_filtered["ht_aimatokritis_CAT"].value_counts().loc["ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ"]/df_filtered["ht_aimatokritis_CAT"].value_counts().sum())*100,1)
-          except KeyError:
-            val=00.00
+          def two_cat_pie(val, val2, annotation1='', annotation2=''):
+              fig_two_cat_pie = make_subplots(rows=1, cols=2, specs=[[{"type": "pie"}, {"type": "pie"}]])
+
+              fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
+                                  values=[val, 100 - val],
+                                  hole=0.85,
+                                  textinfo='none',
+                                  hoverinfo='none',
+                                  marker_colors=['rgb(113,209,145)', 'rgb(240,240,240)'],
+                                  direction='clockwise',
+                                  ), row=1, col=1)
+
+              fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
+                                  values=[val2, 100 - val2],
+                                  hole=0.85,
+                                  textinfo='none',
+                                  hoverinfo="none",
+                                  marker_colors=['rgba(255,43,43,0.8)', 'rgb(240,240,240)'],
+                                  direction='clockwise',
+                                  ), row=1, col=2)
+              
+              # Calculate annotation positions dynamically
+              annotation1_x = 0.5 - 0.5 / fig_two_cat_pie.layout.grid.cols
+              annotation2_x = 0.5 + 0.5 / fig_two_cat_pie.layout.grid.cols
+
+              # Add annotations
+              fig_two_cat_pie.add_annotation(x=annotation1_x, y=0.5, text=annotation1, showarrow=False, font=dict(color='black', size=12),
+                                            xref="paper", yref="paper", row=1, col=1)
+              
+              fig_two_cat_pie.add_annotation(x=annotation2_x, y=0.5, text=annotation2, showarrow=False, font=dict(color='black', size=12),
+                                            xref="paper", yref="paper", row=1, col=2)
+
+              fig_two_cat_pie.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='white', annotations=[])
+
+              return fig_two_cat_pie
+
+        # Example usage:
+        fig = two_cat_pie(70, 30, annotation1='Annotation 1', annotation2='Annotation 2')
+        st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
+
+          # #Times gia synartisi
+          # try:
+          #   val=round((df_filtered["ht_aimatokritis_CAT"].value_counts().loc["ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ"]/df_filtered["ht_aimatokritis_CAT"].value_counts().sum())*100,1)
+          # except KeyError:
+          #   val=00.00
           
-          try:
-            val2=round((df_filtered["ht_aimatokritis_CAT"].value_counts().loc["ΠΑΘΟΛΟΓΙΚΗ"]/df_filtered["ht_aimatokritis_CAT"].value_counts().sum())*100,1)
-          except KeyError:
-            val2=00.00
+          # try:
+          #   val2=round((df_filtered["ht_aimatokritis_CAT"].value_counts().loc["ΠΑΘΟΛΟΓΙΚΗ"]/df_filtered["ht_aimatokritis_CAT"].value_counts().sum())*100,1)
+          # except KeyError:
+          #   val2=00.00
 
-          #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          # #Call of the function
+          # fig_two_cat_pie=two_cat_pie (val,val2)
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%",font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", font_size=20, showarrow=False),
-                                          ], showlegend=False)
-
-          # fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-          #                                 dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-          #                                 dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-          #                                 dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
+          # # Customazation of the fig
+          # fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
+          #                                 dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", font_size=20, showarrow=False),
+          #                                 dict(text=str(val2) + "%",font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
+          #                                 dict(text="ΠΑΘΟΛΟΓΙΚΗ", font_size=20, showarrow=False),
           #                                 ], showlegend=False)
-          fig_two_cat_pie.update_annotations(align="left")
-          #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+
+          # # fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
+          # #                                 dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
+          # #                                 dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
+          # #                                 dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
+          # #                                 ], showlegend=False)
+          # fig_two_cat_pie.update_annotations(align="left")
+          # #Show the plot
+          # st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
