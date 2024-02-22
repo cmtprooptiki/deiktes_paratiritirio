@@ -275,7 +275,7 @@ def main():
                 """,
         ):
         st.subheader("Φύλο Εργαζομένων:")
-        fig = make_subplots(rows=1, cols=2,column_widths=[0.4, 0.6], specs=[[{"type": "indicator"}, {"type": "pie"}]])
+        fig = make_subplots(rows=1, cols=2,column_widths=[0.35, 0.65], specs=[[{"type": "indicator"}, {"type": "pie"}]])
         fig.add_trace(go.Indicator(
                       value=df_filtered["id_ergazomenou"].nunique(),
                       align="center",
