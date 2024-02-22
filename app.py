@@ -245,7 +245,7 @@ def main():
       key="OverView",
           css_styles="""
               {
-                  background-color: red;
+                  background-color: white;
                   border: 1px solid #DCDCDC;
                   border-radius: 10px;
                   padding: 0.5% 0.5% 2% 0.5%;
