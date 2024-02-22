@@ -10,7 +10,7 @@ from streamlit_dynamic_filters import DynamicFilters
 
 ##Function for 2 categories Pie Charts:
 def two_cat_pie (val,val2,label1,label2):
-    title_text = "<span style='font-size: 30px;'>" + str(val) + "%</span>" + "<br><span style='font-size: 20px;line-height: 80px;'>" + str(label1) + "</span>"
+    title_text = "<span style='font-size: 30px;'>" + str(val) + "%</span>" + "<br><span style='font-size: 50px;line-height: 80px;'>" + str(label1) + "</span>"
     fig_two_cat_pie = make_subplots(rows=1, cols=2, specs=[[{"type": "pie"}, {"type": "pie"}]])
 
 
