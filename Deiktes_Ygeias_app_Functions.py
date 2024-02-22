@@ -11,6 +11,7 @@ from streamlit_dynamic_filters import DynamicFilters
 ##Function for 2 categories Pie Charts:
 def two_cat_pie (val,val2,label1,label2):
     title_text = "<br><span style='font-size: 40px;color:rgb(113,209,145)'>" + str(val) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label1) + "</span>"
+    title_text2 = "<br><span style='font-size: 40px;color:rgba(255,43,43,0.8)'>" + str(val) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label2) + "</span>"
     fig_two_cat_pie = make_subplots(rows=1, cols=2, specs=[[{"type": "pie"}, {"type": "pie"}]])
 
 
@@ -27,7 +28,7 @@ def two_cat_pie (val,val2,label1,label2):
     fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
                          values=[val2, 100 - val2],
                          hole=0.85,
-                         title=dict(text=str(val2)+"%"+"<br>"+str(label2),font_size=25, font=dict(color='rgba(255,43,43,0.8)',family="Arial")),
+                         title=title_text2,
                          textinfo='none',
                          hoverinfo="none",
                          marker_colors=['rgba(255,43,43,0.8)', 'rgb(240,240,240)'],
