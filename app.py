@@ -862,14 +862,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -914,14 +908,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -966,14 +954,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1023,7 +1005,7 @@ def main():
             val3=00.00
 
           #Call of the function
-          fig_three_cat_pie=three_cat_pie (val,val2,val3)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΕΠΙΘΥΜΗΤΗ","ΧΑΜΗΛΗ","ΥΨΗΛΗ")
 
           # Customazation of the fig
           fig_three_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.09, y=0.55, font_size=30,font=dict(color="rgb(113,209,145)"), showarrow=False),
@@ -1271,14 +1253,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1324,14 +1300,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1376,14 +1346,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1428,14 +1392,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1481,14 +1439,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1533,14 +1485,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False)
-                                          ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1585,14 +1530,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1637,14 +1576,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1689,14 +1622,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1741,14 +1668,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1793,14 +1714,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΘΕΤΙΚΟ", x=0.175, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1845,14 +1760,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΕΠΑΡΚΕΙΑ","ΑΡΝΗΤΙΚΟ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΕΠΑΡΚΕΙΑ", x=0.168, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1897,14 +1806,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΘΕΤΙΚΟ", x=0.175, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -1949,14 +1852,8 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΘΕΤΙΚΟ", x=0.175, y=0.43, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
-                                          ], showlegend=False)
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -2349,14 +2246,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                        dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                        dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                        dict(text="ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ", x=0.91, y=0.43, font_size=20, showarrow=False),
-                                        ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -2403,14 +2293,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.17, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                        dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-                                        dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                        dict(text="ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ", x=0.91, y=0.43, font_size=20, showarrow=False),
-                                        ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
@@ -2852,14 +2735,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.145, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                        dict(text="ΝΑΙ", x=0.18, y=0.43, font_size=25, showarrow=False),
-                                        dict(text=str(val2) + "%", x=0.875, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                        dict(text="ΟΧΙ", x=0.82, y=0.43, font_size=25, showarrow=False),
-                                        ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
       with col2:
@@ -2888,15 +2764,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.145, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                        dict(text="ΝΑΙ", x=0.19, y=0.43, font_size=25, showarrow=False),
-                                        dict(text=str(val2) + "%", x=0.875, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                        dict(text="ΟΧΙ", x=0.82, y=0.43, font_size=25, showarrow=False),
-                                        ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
       with col3:
@@ -2925,15 +2793,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2)
-
-          # Customazation of the fig
-          # Customazation of the fig
-          fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.145, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                        dict(text="ΝΑΙ", x=0.19, y=0.43, font_size=25, showarrow=False),
-                                        dict(text=str(val2) + "%", x=0.875, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                        dict(text="ΟΧΙ", x=0.82, y=0.43, font_size=25, showarrow=False),
-                                        ], showlegend=False)
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
   ################################################################################################################################################################
