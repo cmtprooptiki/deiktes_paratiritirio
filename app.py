@@ -2900,7 +2900,7 @@ def main():
                     x="xoros_ergasias",
                     y="plhthos_ergatikvn_atyximaton",
                     text_auto=True,
-                    width=900,
+                    width=700,
                     hover_data={"xoros_ergasias":True,"plhthos_ergatikvn_atyximaton":True},
                     labels={"xoros_ergasias":"Χώρος Εργασίας","plhthos_ergatikvn_atyximaton":"Πλήθος Εργατικών Ατυχημάτων"}
                     )
