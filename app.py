@@ -2532,7 +2532,7 @@ def main():
             val4=00.00
 
           #Call of the function
-          fig_four_cat_pie=four_cat_pie (val,val2,val3,val4,"ΧΩΡΙΣ MSDS","ΗΠΙΟ-ΜΕΤΡΙΟ<br>MSDS","ΣΟΒΑΡΟ<br>MSDS","ΠΟΛΥ ΣΟΒΑΡΟ<br>MSDS")
+          fig_four_cat_pie=four_cat_pie (val,val2,val3,val4,"ΧΩΡΙΣ MSDS","ΗΠΙΟ-ΜΕΤΡ.<br>MSDS","ΣΟΒΑΡΟ<br>MSDS","ΠΟΛΥ ΣΟΒ.<br>MSDS")
 
           #Show the plot
           st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
