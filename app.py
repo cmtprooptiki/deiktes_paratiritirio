@@ -524,8 +524,8 @@ def main():
                                   ), row=1, col=2)
               
               # Calculate annotation positions dynamically
-              annotation1_x = 0.5 - 0.5 / fig_two_cat_pie.layout.grid.cols
-              annotation2_x = 0.5 + 0.5 / fig_two_cat_pie.layout.grid.cols
+              annotation1_x = 1 / 4
+              annotation2_x = 3 / 4
 
               # Add annotations
               fig_two_cat_pie.add_annotation(x=annotation1_x, y=0.5, text=annotation1, showarrow=False, font=dict(color='black', size=12),
