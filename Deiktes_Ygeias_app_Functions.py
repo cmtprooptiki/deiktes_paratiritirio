@@ -16,7 +16,7 @@ def two_cat_pie (val,val2):
     fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
                          values=[val, 100 - val],
                          hole=0.85,
-                         title=dict(text=str(val)+"%"+"<br> pathologiki",font_size=35, font=dict(color='blue')),
+                         title=dict(text=str(val)+"%"+"<br>"+str(val),font_size=35, font=dict(color='blue',family="Arial")),
                          textinfo='none',
                          hoverinfo='none',
                          marker_colors=['rgb(113,209,145)', 'rgb(240,240,240)'],
