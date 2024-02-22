@@ -2589,16 +2589,7 @@ def main():
             val3=00.00
 
           #Call of the function
-          fig_three_cat_pie_v2=three_cat_pie_v2 (val,val2,val3)
-
-          # Customazation of the fig
-          fig_three_cat_pie_v2.update_layout(annotations=[dict(text=str(val) + "%", x=0.09, y=0.55, font_size=30,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.06, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.5, y=0.55, font_size=30,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΑΠΟΦΡΑΚΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ", x=0.495, y=0.4, font_size=20, showarrow=False),
-                                          dict(text=str(val3) + "%", x=0.92, y=0.55, font_size=30,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΕΡΙΟΡΙΣΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ", x=0.945, y=0.4, font_size=20, showarrow=False),
-                                          ], showlegend=False)
+          fig_three_cat_pie_v2=three_cat_pie_v2 (val,val2,val3,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΠΟΦΡΑΚΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ","ΠΕΡΙΟΡΙΣΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ")
 
           #Show the plot
           st.plotly_chart(fig_three_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
