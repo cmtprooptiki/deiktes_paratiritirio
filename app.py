@@ -1123,16 +1123,8 @@ def main():
             val3=00.00
 
           #Call of the function
-          fig_three_cat_pie=three_cat_pie (val,val2,val3)
+          fig_three_cat_pie=three_cat_pie (val,val2,val3,"ΕΠΙΘΥΜΗΤΗ","ΟΡ.ΥΨΗΛΗ","ΥΨΗΛΗ")
 
-          # Customazation of the fig
-          fig_three_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.09, y=0.55, font_size=30,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΕΠΙΘΥΜΗΤΗ", x=0.07, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.5, y=0.55, font_size=30,font=dict(color="rgba(255, 127, 14,0.8)"), showarrow=False),
-                                          dict(text="ΟΡΙΑΚΑ ΥΨΗΛΗ", x=0.495, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val3) + "%", x=0.92, y=0.55, font_size=30,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΥΨΗΛΗ", x=0.9009, y=0.45, font_size=20, showarrow=False),
-                                          ], showlegend=False)
 
           #Show the plot
           st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
