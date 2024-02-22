@@ -311,12 +311,12 @@ def main():
                 """,
         ):
         st.subheader("Χώροι Εργασίας:")
-        fig = make_subplots(rows=1, cols=2, specs=[[{"type": "indicator"}, {"type": "pie"}]])
+        fig = make_subplots(rows=1, cols=2,column_widths=[0.35, 0.65], specs=[[{"type": "indicator"}, {"type": "pie"}]])
         fig.add_trace(go.Indicator(
                       value=df_filtered["xoros_ergasias"].nunique(),
                       align="center",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Χώροι Εργασίας","font":{"size":25,"color":"gray"},"align":"center"}
+                      title={"text":"Χώροι Εργασίας","font":{"size":22,"color":"gray"},"align":"center"}
                       ),row=1,col=1)
         fig.add_trace(go.Pie(
                             values= df_filtered["xoros_ergasias"].value_counts().values,
