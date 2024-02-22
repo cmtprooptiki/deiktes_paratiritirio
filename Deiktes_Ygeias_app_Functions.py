@@ -16,6 +16,7 @@ def two_cat_pie (val,val2):
     fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
                          values=[val, 100 - val],
                          hole=0.85,
+                         title="1111",
                          textinfo='none',
                          hoverinfo='none',
                          marker_colors=['rgb(113,209,145)', 'rgb(240,240,240)'],
