@@ -433,7 +433,7 @@ def main():
                 """,
         ):
         st.subheader("Δείκτες Υγείας:")
-        fig = make_subplots(rows=1, cols=3,column_widths=[0.3,0.3,0.4], specs=[[{"type": "indicator"},{"type": "indicator"}, {"type": "pie"}]])
+        fig = make_subplots(rows=1, cols=3,column_widths=[0.28,0.28,0.44], specs=[[{"type": "indicator"},{"type": "indicator"}, {"type": "pie"}]])
         fig.add_trace(go.Indicator(
                       value=60,
                       align="center",
