@@ -280,7 +280,7 @@ def main():
                       value=df_filtered["id_ergazomenou"].nunique(),
                       align="center",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Αρ.Εργαζομένων","font":{"size":20,"color":"gray"},"align":"center"}
+                      title={"text":"Αρ.Εργαζομένων","font":{"size":25,"color":"gray"},"align":"right"}
                       ),row=1,col=1)
         fig.add_trace(go.Pie(
                             values= df_filtered["gender"].value_counts().values,
