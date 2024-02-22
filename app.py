@@ -629,7 +629,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -639,7 +639,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 5:
@@ -681,7 +681,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -691,7 +691,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
     ###################################################################################################################################################################
       
@@ -734,7 +734,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -744,7 +744,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 7:
@@ -786,7 +786,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -796,7 +796,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 8,9:
@@ -837,7 +837,7 @@ def main():
                                           dict(text="ΘΕΤΙΚΟ", x=0.825, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
       with col2:
         with stylable_container(
@@ -875,7 +875,7 @@ def main():
                                           dict(text="ΘΕΤΙΚΟ", x=0.825, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
       
     ###################################################################################################################################################################
       
@@ -918,7 +918,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -928,7 +928,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 11:
@@ -970,7 +970,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -980,7 +980,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 12:
@@ -1022,7 +1022,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1032,7 +1032,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 13:
@@ -1082,7 +1082,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
             #Times gia sinartisi
@@ -1092,7 +1092,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 14:
@@ -1209,7 +1209,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
             #Times gia sinartisi
@@ -1219,7 +1219,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
 
       #ΕΞΕΤΑΣΗ 16:
@@ -1275,7 +1275,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -1285,7 +1285,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
       ######################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 17:
@@ -1327,7 +1327,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1337,7 +1337,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
     ###################################################################################################################################################################
       
@@ -1380,7 +1380,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1390,7 +1390,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 19:
@@ -1432,7 +1432,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1442,7 +1442,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 20:
@@ -1484,7 +1484,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1494,7 +1494,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
         
     ###################################################################################################################################################################
       
@@ -1537,7 +1537,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1547,7 +1547,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 22:
@@ -1589,7 +1589,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False)
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1599,7 +1599,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 23:
@@ -1641,7 +1641,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1651,7 +1651,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 24:
@@ -1693,7 +1693,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1703,7 +1703,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 25:
@@ -1745,7 +1745,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1755,7 +1755,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 26:
@@ -1797,7 +1797,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1807,7 +1807,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 27:
@@ -1849,7 +1849,7 @@ def main():
                                           dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1859,7 +1859,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 28:
@@ -1901,7 +1901,7 @@ def main():
                                           dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1911,7 +1911,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 29:
@@ -1953,7 +1953,7 @@ def main():
                                           dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -1963,7 +1963,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 30:
@@ -2005,7 +2005,7 @@ def main():
                                           dict(text="ΑΡΝΗΤΙΚΟ", x=0.836, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -2015,7 +2015,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
   ###################################################################################################################################################################
   ###################################################################################################################################################################  
@@ -2405,7 +2405,7 @@ def main():
                                         dict(text="ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ", x=0.91, y=0.43, font_size=20, showarrow=False),
                                         ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
             
@@ -2415,7 +2415,7 @@ def main():
           #Call of the function
           fig_kpis_hist=kpis_hist(value)
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
       ################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 1.2:
@@ -2459,7 +2459,7 @@ def main():
                                         dict(text="ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ", x=0.91, y=0.43, font_size=20, showarrow=False),
                                         ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
             
@@ -2469,7 +2469,7 @@ def main():
           #Call of the function
           fig_kpis_hist=kpis_hist(value)
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
     
       #ΕΞΕΤΑΣΗ 2:
@@ -2525,7 +2525,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -2535,7 +2535,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
     ################################################################################################################################################################
       
@@ -2592,7 +2592,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -2602,7 +2602,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
   ##################################################################################################################################################################
     
@@ -2659,7 +2659,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -2669,7 +2669,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
   ##################################################################################################################################################################
       
@@ -2726,7 +2726,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -2736,7 +2736,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
   ##################################################################################################################################################################
     
       #ΕΞΕΤΑΣΗ 6:
@@ -2792,7 +2792,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -2802,7 +2802,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
     ################################################################################################################################################################
       
@@ -2858,7 +2858,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie_v2, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
           # #Times gia sinartisi me filtro giati einai polles sthn spirometrisi
@@ -2868,7 +2868,7 @@ def main():
           fig_kpis_hist=kpis_hist(df_filtered[value])
 
           # #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
       ################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 8,9,10:
@@ -3056,7 +3056,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
             #Times gia sinartisi
@@ -3066,7 +3066,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
       #################################################################################################################################################################
       
       # 1:
@@ -3122,7 +3122,7 @@ def main():
                                           ], showlegend=False)
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
           with col2:
             #Times gia sinartisi
@@ -3132,7 +3132,7 @@ def main():
             fig_kpis_hist=kpis_hist(value)
 
             #Show the plot:
-            st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
 
   #################################################################################################################################################################
   #################################################################################################################################################################
@@ -3375,7 +3375,7 @@ def main():
                                             ], showlegend=False)
 
             #Show the plot
-            st.plotly_chart(fig_four_cat_pie, use_container_width=False,config={'displayModeBar': False})
+            st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
 
             with col2:
               #Times gia sinartisi
@@ -3385,7 +3385,7 @@ def main():
               fig_kpis_hist=kpis_hist(value)
 
               #Show the plot:
-              st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+              st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
         
   #################################################################################################################################################################
   #################################################################################################################################################################
