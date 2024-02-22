@@ -216,31 +216,31 @@ def kpis_hist(value):
     fig_kpis_hist.add_trace(go.Indicator(
                   value=value.count(),
                   align="left",
-                  number={"font": {"size": 40,"color":color}},
+                  number={"font": {"size": 35,"color":color}},
                   title={"text":"Εργαζόμενοι","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=1)
     fig_kpis_hist.add_trace(go.Indicator(
                   value=round(value.mean(),1),
                   align="left",
-                  number={"font": {"size": 40,"color":color}},
+                  number={"font": {"size": 35,"color":color}},
                   title={"text":"Μέσος όρος","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=2)
     fig_kpis_hist.add_trace(go.Indicator(
                   value=round(value.min(),1),
                   align="left",
-                  number={"font": {"size": 40,"color":color}},
+                  number={"font": {"size": 35,"color":color}},
                   title={"text":"Min","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=3)
     fig_kpis_hist.add_trace(go.Indicator(
                   value=round(value.quantile(0.75),1),
                   align="left",
-                  number={"font": {"size": 40,"color":color}},
+                  number={"font": {"size": 35,"color":color}},
                   title={"text":"75%","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=4)
     fig_kpis_hist.add_trace(go.Indicator(
                   value=round(value.max(),1),
                   align="left",
-                  number={"font": {"size": 40,"color":color}},
+                  number={"font": {"size": 35,"color":color}},
                   title={"text":"Max","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=5)
     fig_kpis_hist.add_trace(go.Histogram(
