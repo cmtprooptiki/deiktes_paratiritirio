@@ -360,43 +360,43 @@ def main():
                       value=df_filtered["patient_age"].count(),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Εργαζόμενοι","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"Εργαζόμενοι","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=1)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].mean(),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Μέσος όρος","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"Μέσος όρος","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=2)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].min(),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Min","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"Min","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=3)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].quantile(0.25),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"25%","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"25%","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=4)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].median(),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Διάμεσος","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"Διάμεσος","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=5)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].quantile(0.75),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"75%","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"75%","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=6)
         fig_extra_kpis_hist.add_trace(go.Indicator(
                       value=round(df_filtered["patient_age"].max(),1),
                       align="left",
                       number={"font": {"size": 40,"color":"#379683"}},
-                      title={"text":"Max","font":{"size":20,"color":"gray"},"align":"left"}
+                      title={"text":"Max","font":{"size":22,"color":"gray"},"align":"left"}
                       ),row=1,col=7)
         fig_extra_kpis_hist.add_trace(go.Histogram(
                       x=df_filtered["patient_age"],
