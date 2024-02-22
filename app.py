@@ -257,7 +257,7 @@ def main():
     #dynamic_filters.display_df()
 
     #1: Overview Dashboard:
-    col1,col2=st.columns(2)
+    col1,col2=st.columns([0.4,0.6])
 
 
     #Gender
