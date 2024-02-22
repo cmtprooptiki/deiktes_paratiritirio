@@ -9,14 +9,14 @@ from plotly.subplots import make_subplots
 from streamlit_dynamic_filters import DynamicFilters
 
 ##Function for 2 categories Pie Charts:
-def two_cat_pie (val,val2):
+def two_cat_pie (val,val2,label1,label2):
     fig_two_cat_pie = make_subplots(rows=1, cols=2, specs=[[{"type": "pie"}, {"type": "pie"}]])
 
 
     fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
                          values=[val, 100 - val],
                          hole=0.85,
-                         title=dict(text=str(val)+"%"+"<br>"+str(val),font_size=35, font=dict(color='rgb(113,209,145)',family="Arial")),
+                         title=dict(text=str(val)+"%"+"<br>"+str(label1),font_size=35, font=dict(color='rgb(113,209,145)',family="Arial")),
                          textinfo='none',
                          hoverinfo='none',
                          marker_colors=['rgb(113,209,145)', 'rgb(240,240,240)'],
@@ -26,12 +26,16 @@ def two_cat_pie (val,val2):
     fig_two_cat_pie.add_trace(go.Pie(labels=['', ''],
                          values=[val2, 100 - val2],
                          hole=0.85,
+                         title=dict(text=str(val2)+"%"+"<br>"+str(label2),font_size=35, font=dict(color='rgba(255,43,43,0.8)',family="Arial")),
                          textinfo='none',
                          hoverinfo="none",
                          marker_colors=['rgba(255,43,43,0.8)', 'rgb(240,240,240)'],
                          direction='clockwise',
                          ), row=1, col=2)
     fig_two_cat_pie.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white')
+
+    # Customazation of the fig
+    fig_two_cat_pie.update_layout(showlegend=False)
 
     return fig_two_cat_pie
 #######################################################################################################################################
