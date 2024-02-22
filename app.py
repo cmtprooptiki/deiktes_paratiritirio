@@ -514,7 +514,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2,"nai","oxi")
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           
           #Show the plot
