@@ -2589,7 +2589,7 @@ def main():
             val3=00.00
 
           #Call of the function
-          fig_three_cat_pie_v2=three_cat_pie_v2 (val,val2,val3,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΠΟΦΡΑΚΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ","ΠΕΡΙΟΡΙΣΤΙΚΟ<br>ΣΥΝΔΡΟΜΟ")
+          fig_three_cat_pie_v2=three_cat_pie_v2 (val,val2,val3,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΠΟΦΡΑΚΤΙΚΟ<br><br>ΣΥΝΔΡΟΜΟ","ΠΕΡΙΟΡΙΣΤΙΚΟ<br><br>ΣΥΝΔΡΟΜΟ")
 
           #Show the plot
           st.plotly_chart(fig_three_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
