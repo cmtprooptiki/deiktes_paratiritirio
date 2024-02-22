@@ -522,6 +522,7 @@ def main():
                                           dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
+          fig_two_cat_pie.update_annotations(align="center")
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
