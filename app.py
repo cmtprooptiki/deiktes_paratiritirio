@@ -517,11 +517,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2)
 
           # Customazation of the fig
-          # fig_two_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.165, y=0.55, font_size=35,font=dict(color="rgb(113,209,145)"), showarrow=False),
-          #                                 dict(text="ΦΥΣΙΟΛΟΓΙΚΗ", x=0.143, y=0.43, font_size=20, showarrow=False),
-          #                                 dict(text=str(val2) + "%", x=0.84, y=0.55, font_size=35,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-          #                                 dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
-          #                                 ], showlegend=False)
+          fig_two_cat_pie.update_layout(title_font=dict(color='red'))
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
