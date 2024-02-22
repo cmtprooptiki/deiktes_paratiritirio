@@ -125,7 +125,7 @@ def three_cat_pie_v2 (val,val2,val3):
 #######################################################################################################################################
 
 ##Function for 4 categories Pie Charts:
-def four_cat_pie (val,val2,val3,val4):
+def four_cat_pie (val,val2,val3,val4,label1,label2,label3,label4):
     title_text = "<br><span style='font-size: 30px;color:rgb(113,209,145)'>" + str(val) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label1) + "</span>"
     title_text2 = "<br><span style='font-size: 30px;color:rgba(255, 127, 14,0.7)'>" + str(val2) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label2) + "</span>"
     title_text3="<br><span style='font-size: 30px;color:rgba(255,43,43,0.6)'>" + str(val3) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label3) + "</span>"
