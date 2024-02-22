@@ -577,7 +577,7 @@ def main():
                                           dict(text="ΠΑΘΟΛΟΓΙΚΗ", x=0.86, y=0.43, font_size=20, showarrow=False),
                                           ], showlegend=False)
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
           
         with col2:
         #Times gia sinartisi
@@ -587,7 +587,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=False,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
     ###################################################################################################################################################################
       
       #ΕΞΕΤΑΣΗ 4:
