@@ -183,7 +183,7 @@ def main():
                              styles={
                             #         "container": {"padding": "5!important", "background-color": "#fafafa"},
                             #         "icon": {"color": "orange", "font-size": "30px"}, 
-                                    "nav-link": {"font-size": "10px", "text-align": "left", "margin":"5px", "--hover-color": "#eee"},
+                                    "nav-link": {"font-size": "15px", "text-align": "left", "margin":"5px", "--hover-color": "#eee"},
                             #         "nav-link-selected": {"background-color": "#02ab21"},
                                   }
                             )
