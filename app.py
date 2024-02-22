@@ -1005,7 +1005,7 @@ def main():
             val3=00.00
 
           #Call of the function
-          fig_three_cat_pie=three_cat_pie (val,val2,"ΕΠΙΘΥΜΗΤΗ","ΧΑΜΗΛΗ","ΥΨΗΛΗ")
+          fig_three_cat_pie=three_cat_pie (val,val2,val3,"ΕΠΙΘΥΜΗΤΗ","ΧΑΜΗΛΗ","ΥΨΗΛΗ")
 
           #Show the plot
           st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
