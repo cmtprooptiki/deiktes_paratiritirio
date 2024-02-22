@@ -2948,7 +2948,7 @@ def main():
                         value=DE,
                         align="center",
                         number={"font": {"size": 50,"color":"#379683"}},
-                        title={"text":"Δείκτης επίπτωσης<br>εργατικών ατυχημάτων<br>(ΔΕ):","font":{"size":25,"color":"gray"},"align":"center"}
+                        title={"text":"Δείκτης επίπτωσης<br>εργατικών ατυχημάτων<br>(ΔΕ):","font":{"size":20,"color":"gray"},"align":"center"}
                         ))
           fig.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white')
           st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
