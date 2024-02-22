@@ -45,11 +45,15 @@ def two_cat_pie (val,val2,label1,label2):
 
 ##Function for 3 categories Pie Charts:
 def three_cat_pie (val,val2,val3):
+    title_text = "<br><span style='font-size: 40px;color:rgb(113,209,145)'>" + str(val) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label1) + "</span>"
+    title_text2 = "<br><span style='font-size: 40px;color:rgba(255, 127, 14,0.7)'>" + str(val2) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label2) + "</span>"
+    title_text3="<br><span style='font-size: 40px;color:rgba(255,43,43,0.8)'>" + str(val3) + "%</span>" + "<br><br><span style='font-size: 20px;'>" + str(label3) + "</span>"
     fig_three_cat_pie = make_subplots(rows=1, cols=3,specs=[[{"type": "pie"}, {"type": "pie"}, {"type": "pie"}]])
 
     fig_three_cat_pie.add_trace(go.Pie(labels=['',''],
                       values=[val,100-val],
                       hole=0.85,
+                      title=title_text,
                       textinfo='none',
                       hoverinfo="none",
                       marker_colors=['rgb(113,209,145)','rgb(240,240,240)'],
@@ -59,6 +63,7 @@ def three_cat_pie (val,val2,val3):
     fig_three_cat_pie.add_trace(go.Pie(labels=['',''],
                       values=[val2,100-val2],
                       hole=0.85,
+                      title=title_text2,
                       textinfo='none',
                       hoverinfo="none",
                       marker_colors=['rgba(255, 127, 14,0.7)','rgb(240,240,240)'],
@@ -68,12 +73,16 @@ def three_cat_pie (val,val2,val3):
     fig_three_cat_pie.add_trace(go.Pie(labels=['',''],
                       values=[val3,100-val3],
                       hole=0.85,
+                      title=title_text3,
                       textinfo='none',
                       hoverinfo="none",
                       marker_colors=['rgba(255,43,43,0.8)','rgb(240,240,240)'],
                       direction='clockwise',
                       ),row=1, col=3)
     fig_three_cat_pie.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white')
+
+    # Customazation of the fig
+    fig_three_cat_pie.update_layout(showlegend=False)
 
     return fig_three_cat_pie
 #######################################################################################################################################
