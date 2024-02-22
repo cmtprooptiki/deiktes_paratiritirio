@@ -437,14 +437,14 @@ def main():
         fig.add_trace(go.Indicator(
                       value=60,
                       align="center",
-                      number={"font": {"size": 50,"color":"#379683"}},
-                      title={"text":"Αρ.Δεικτών Υγείας","font":{"size":35,"color":"gray"},"align":"center"}
+                      number={"font": {"size": 35,"color":"#379683"}},
+                      title={"text":"Αρ.Δεικτών Υγείας","font":{"size":22,"color":"gray"},"align":"center"}
                       ),row=1,col=1)
         fig.add_trace(go.Indicator(
                       value=5,
                       align="center",
-                      number={"font": {"size": 50,"color":"#379683"}},
-                      title={"text":"Κατηγορίες Δεικτών Υγείας","font":{"size":35,"color":"gray"},"align":"center"}
+                      number={"font": {"size": 35,"color":"#379683"}},
+                      title={"text":"Κατηγορίες Δεικτών Υγείας","font":{"size":22,"color":"gray"},"align":"center"}
                       ),row=1,col=2)
         fig.add_trace(go.Pie(
                             values= [29,12,11,2,6],
