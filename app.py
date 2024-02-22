@@ -1060,7 +1060,7 @@ def main():
             val4=00.00
 
           #Call of the function
-          fig_four_cat_pie_v2=four_cat_pie_v2 (val,val2,val3,val4,"ΙΔΑΝΙΚΗ","ΣΧ. ΙΔΑΝΙΚΗ","ΟΡ. ΥΨΗΛΗ","ΥΨΗΛΗ")
+          fig_four_cat_pie_v2=four_cat_pie_v2 (val,val2,val3,val4,"ΙΔΑΝΙΚΗ","ΣΧ. ΙΔΑΝ.","ΟΡ. ΥΨΗΛ.","ΥΨΗΛΗ")
 
           #Show the plot
           st.plotly_chart(fig_four_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
