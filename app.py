@@ -2421,18 +2421,7 @@ def main():
             val4=00.00
 
           #Call of the function
-          fig_four_cat_pie=four_cat_pie (val,val2,val3,val4)
-
-          # Customazation of the fig
-          fig_four_cat_pie.update_layout(annotations=[dict(text=str(val) + "%", x=0.052, y=0.55, font_size=30,font=dict(color="rgb(113,209,145)"), showarrow=False),
-                                          dict(text="ΧΑΜΗΛΟΣ", x=0.049, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val2) + "%", x=0.373, y=0.55, font_size=30,font=dict(color="rgba(255, 127, 14,0.8)"), showarrow=False),
-                                          dict(text="ΜΕΤΡΙΟΣ", x=0.37, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val3) + "%", x=0.635, y=0.55, font_size=30,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΥΨΗΛΟΣ", x=0.63, y=0.45, font_size=20, showarrow=False),
-                                          dict(text=str(val4) + "%", x=0.955, y=0.55, font_size=30,font=dict(color="rgba(255,43,43,0.8)"), showarrow=False),
-                                          dict(text="ΠΟΛΥ ΥΨ.", x=0.95, y=0.45, font_size=20, showarrow=False)
-                                          ], showlegend=False)
+          fig_four_cat_pie=four_cat_pie (val,val2,val3,val4,"ΧΑΜΗΛΟΣ","ΜΕΤΡΙΟΣ","ΥΨΗΛΟΣ","ΠΟΛΥ ΥΨ.")
 
           #Show the plot
           st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
