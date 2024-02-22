@@ -180,12 +180,12 @@ def main():
         choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών","Πίνακας Δεδομένων"],
                             icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart','table'],
                             menu_icon="activity", default_index=0,
-                            #  styles={
+                             styles={
                             #         "container": {"padding": "5!important", "background-color": "#fafafa"},
                             #         "icon": {"color": "orange", "font-size": "30px"}, 
-                            #         "nav-link": {"font-size": "20px", "text-align": "left", "margin":"5px", "--hover-color": "#eee"},
+                                    "nav-link": {"font-size": "20px", "text-align": "left", "margin":"5px", "--hover-color": "#eee"},
                             #         "nav-link-selected": {"background-color": "#02ab21"},
-                            #       }
+                                  }
                             )
       else:
         choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών"],
