@@ -3024,7 +3024,7 @@ def main():
                         value=rithmos_apousiwn,
                         align="center",
                         number={"font": {"size": 40,"color":"#379683"}},
-                        title={"text":"Ρυθμός απουσιών:","font":{"size":18,"color":"gray"},"align":"center"}
+                        title={"text":"Ρυθμός απουσιών:<br>","font":{"size":18,"color":"gray"},"align":"center"}
                         ))
           fig.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='white')
           st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
