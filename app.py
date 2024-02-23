@@ -229,6 +229,21 @@ def main():
     Created by [CmtProoptiki](https://cmtprooptiki.gr/)
                             ''')
       
+      elif choose=="Πίνακας Δεδομένων":
+        #Header
+        #st.sidebar.header("Επιλέξτε Φίλτρα:")
+        #Create an instance of the DynamicFilters class
+        #dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'space','eth_ekthesis'])
+        #Display the filters in your app:
+        #dynamic_filters.display_filters(location="sidebar")
+        #Assign a filtered dataframe to a variable:
+        #df_filtered = dynamic_filters.filter_df()
+        #link of creator
+        st.sidebar.markdown('''
+    ---
+    Created by [CmtProoptiki](https://cmtprooptiki.gr/)
+                            ''')
+      
       else:
         #Header
         st.sidebar.header("Επιλέξτε Φίλτρα:")
