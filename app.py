@@ -289,7 +289,7 @@ def main():
                 }
                 """,
         ):
-        st.subheader("Φύλο Εργαζομένων:")
+        st.subheader("Φύλο:")
         fig = make_subplots(rows=1, cols=2,column_widths=[0.35, 0.65], specs=[[{"type": "indicator"}, {"type": "pie"}]])
         fig.add_trace(go.Indicator(
                       value=df_filtered["id_ergazomenou"].nunique(),
@@ -360,7 +360,7 @@ def main():
                 }
                 """,
         ):
-        st.subheader("Ηλικιακή Κατανομή Εργαζομένων:")
+        st.subheader("Ηλικιακή Κατανομή:")
         fig_extra_kpis_hist = make_subplots(
         rows=2, cols=7,
         #column_widths=[0.6, 0.4],
@@ -480,7 +480,7 @@ def main():
   ###################################################################################################################################################################
 
   #Εργαστηριακοί Δείκτες - Section:
-  elif choose == "Εργαστηριακοί Δείκτες":
+  elif choose == "Εργαστηριακοί":
     with stylable_container(
       key="Ergastiriakes_title",
           css_styles="""
