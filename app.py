@@ -1847,7 +1847,7 @@ def main():
   ###################################################################################################################################################################  
 
   #Βαρέα Μέταλα - Section:
-  elif choose== "Βαρέα Μέταλα":
+  elif choose== "Βαρέων Μετάλων":
     with stylable_container(
       key="Varea_metala_title",
           css_styles="""
@@ -1860,7 +1860,7 @@ def main():
               }
               """,
       ):
-      st.title("Βαρέα Μέταλα:")
+      st.title("Βαρέα Μέταλα")
     if (df_filtered["id_ergazomenou"].nunique()<privacy_limit):
       st.warning(warning_message,icon="⚠️")
     else:
