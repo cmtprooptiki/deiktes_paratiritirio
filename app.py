@@ -8,6 +8,8 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from streamlit_dynamic_filters import DynamicFilters
 from streamlit_extras.stylable_container import stylable_container
+import requests
+import json
 #Call the functions for the Vis
 from Deiktes_Ygeias_app_Functions import *
 
