@@ -3319,31 +3319,8 @@ def main():
     response = json.loads(requests.get("http://backend.paratiritirio-edsna.gr:5000/buildingmetrics-public?api_key=37ca1953-2a98-4623-8a51-99729ca432da").text)
     df_env=pd.json_normalize(response, max_level=2)
     df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
-    def colorize(row):
-      metric_name = row['metric.name']
-      value = row['value']
-      if metric_name in metric_limits:
-          lower_limit, upper_limit = metric_limits[metric_name]
-          if value <= lower_limit:
-              color = 'green'
-          elif value >= upper_limit:
-              color = 'red'
-          else:
-              color = ''
-          return ['color: %s' % color] * len(row)
-      else:
-          return [''] * len(row)
 
-    # Define your limits for each metric name
-    metric_limits = {
-        'PM10': (0, 50),  # Define lower and upper limit for metric_name_1
-        'metric_name_2': (50, 150),  # Define lower and upper limit for metric_name_2
-        # Add more metric names and their corresponding limits as needed
-    }
-    # Apply color function to the DataFrame
-    df_env_styled = df_env.style.apply(colorize, axis=1)
-
-    st.dataframe(df_env_styled,
+    st.dataframe(df_env,
                  width=None,
                  height=800,
                  use_container_width=True,
