@@ -3304,22 +3304,22 @@ def main():
               """,
       ):
       st.title("Περιβαλλοντικές Μετρήσεις")
-      with stylable_container(
-        key="df_env",
-        css_styles="""
-              {
-                  background-color: white;
-                  border: 1px solid #DCDCDC;
-                  border-radius: 10px;
-                  padding: 0.5% 0.5% 2% 0.5%;
-                  
-              }
-              """,
-      ):
-        response = json.loads(requests.get("http://backend.paratiritirio-edsna.gr:5000/buildingmetrics-public?api_key=37ca1953-2a98-4623-8a51-99729ca432da").text)
-        df_env=pd.json_normalize(response, max_level=2)
-        df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
-        st.write(df_env)
+    with stylable_container(
+      key="df_env",
+      css_styles="""
+            {
+                background-color: white;
+                border: 1px solid #DCDCDC;
+                border-radius: 10px;
+                padding: 0.5% 0.5% 2% 0.5%;
+                
+            }
+            """,
+    ):
+      response = json.loads(requests.get("http://backend.paratiritirio-edsna.gr:5000/buildingmetrics-public?api_key=37ca1953-2a98-4623-8a51-99729ca432da").text)
+      df_env=pd.json_normalize(response, max_level=2)
+      df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
+      st.write(df_env)
   #################################################################################################################################################################
   #################################################################################################################################################################
 def get_url_params():
