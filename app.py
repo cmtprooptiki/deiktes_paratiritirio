@@ -493,7 +493,7 @@ def main():
               }
               """,
       ):
-      st.title("Εργαστηριακοί Δείκτες:")
+      st.title("Εργαστηριακοί Δείκτες")
     if (df_filtered["id_ergazomenou"].nunique()<privacy_limit):
       st.warning(warning_message,icon="⚠️")
     else:
