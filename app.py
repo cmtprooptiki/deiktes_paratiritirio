@@ -177,8 +177,8 @@ def main():
       st.image("data:image/jpeg;base64,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",width=200)
       if role=="admin":
 
-        choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών","Πίνακας Δεδομένων"],
-                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart','table'],
+        choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών","Πίνακας Δεδομένων","Περιβαλλοντικές Μετρήσεις"],
+                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart','table',"globe-americas"],
                             menu_icon="activity", default_index=0,
                              styles={
                                     # "container": {"padding": "5!important", "background-color": "#fafafa"},
@@ -188,8 +188,8 @@ def main():
                                   }
                             )
       else:
-        choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών"],
-                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart'],
+        choose = option_menu(menu_title="Δείκτες Υγείας", options=["Overview Dashboard","Εργαστηριακοί Δείκτες","Βαρέα Μέταλα", "Λοιποί Δείκτες", "Εργασιακή Ικανοποίηση", "Εργατικά Ατυχήματα-Απουσιασμός","Συγκρίσεις Δεικτών","Περιβαλλοντικές Μετρήσεις"],
+                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart',"globe-americas"],
                             menu_icon="activity", default_index=0,
                              styles={
                             #         "container": {"padding": "5!important", "background-color": "#fafafa"},
@@ -213,7 +213,22 @@ def main():
     ---
     Created by [CmtProoptiki](https://cmtprooptiki.gr/)
                             ''')
-
+      
+      elif choose=="Περιβαλλοντικές Μετρήσεις":
+        #Header
+        #st.sidebar.header("Επιλέξτε Φίλτρα:")
+        #Create an instance of the DynamicFilters class
+        #dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'space','eth_ekthesis'])
+        #Display the filters in your app:
+        #dynamic_filters.display_filters(location="sidebar")
+        #Assign a filtered dataframe to a variable:
+        #df_filtered = dynamic_filters.filter_df()
+        #link of creator
+        st.sidebar.markdown('''
+    ---
+    Created by [CmtProoptiki](https://cmtprooptiki.gr/)
+                            ''')
+      
       else:
         #Header
         st.sidebar.header("Επιλέξτε Φίλτρα:")
@@ -3271,6 +3286,22 @@ def main():
     csv=df_filtered.to_csv().encode("utf-8")
     if st.download_button("Κατέβασμα Δεδομένων σε csv format",csv,file_name="Δείκτες_Υγείας_data.csv",type="primary"):
       st.success("Το αρχείο κατέβηκε με επιτυχία!",icon="✅")
+  #################################################################################################################################################################
+  #Overview Dashboard - Section:
+  if choose == "Περιβαλλοντικές Μετρήσεις":
+    with stylable_container(
+      key="Perivallon",
+          css_styles="""
+              {
+                  background-color: white;
+                  border: 1px solid #DCDCDC;
+                  border-radius: 10px;
+                  padding: 0.5% 0.5% 2% 0.5%;
+                  
+              }
+              """,
+      ):
+      st.title("Περιβαλλοντικές Μετρήσεις:")
   #################################################################################################################################################################
   #################################################################################################################################################################
 def get_url_params():
