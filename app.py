@@ -2715,7 +2715,7 @@ def main():
   ##################################################################################################################################################################
     
   #Εργασιακή Ικανοποίηση - Section:
-  elif choose== "Εργασιακή Ικανοποίηση":
+  elif choose== "Εργασιακής Ικανοποίησης":
     with stylable_container(
       key="Loipoi_Deiktes_title",
           css_styles="""
@@ -2728,7 +2728,7 @@ def main():
               }
               """,
       ):
-      st.title("Εργασιακή Ικανοποίηση:")
+      st.title("Δείκτες Εργασιακής Ικανοποίησης:")
     if (df_filtered["id_ergazomenou"].nunique()<privacy_limit):
       st.warning(warning_message,icon="⚠️")
     else:
