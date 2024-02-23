@@ -199,7 +199,7 @@ def main():
                                   }
                             )
       
-      if choose=="Συγκρίσεις Δεικτών":
+      if choose=="Συγκρίσεις":
         #Header
         #st.sidebar.header("Επιλέξτε Φίλτρα:")
         #Create an instance of the DynamicFilters class
@@ -214,7 +214,7 @@ def main():
     Created by [CmtProoptiki](https://cmtprooptiki.gr/)
                             ''')
       
-      elif choose=="Περιβαλλοντικές Μετρήσεις":
+      elif choose=="Περιβάλλοντος":
         #Header
         #st.sidebar.header("Επιλέξτε Φίλτρα:")
         #Create an instance of the DynamicFilters class
@@ -255,7 +255,7 @@ def main():
   ################################################################################################################################################################### 
 
   #Overview Dashboard - Section:
-  if choose == "Overview Dashboard":
+  if choose == "Επισκόπηση":
     with stylable_container(
       key="OverView",
           css_styles="""
@@ -268,7 +268,7 @@ def main():
               }
               """,
       ):
-      st.title("Overview Dashboard:")
+      st.title("Επισκόπηση")
     #dynamic_filters.display_df()
 
     #1: Overview Dashboard:
