@@ -3319,7 +3319,7 @@ def main():
       response = json.loads(requests.get("http://backend.paratiritirio-edsna.gr:5000/buildingmetrics-public?api_key=37ca1953-2a98-4623-8a51-99729ca432da").text)
       df_env=pd.json_normalize(response, max_level=2)
       df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
-      st.dataframe(df_env,width=500,height=800,use_container_width=True,hide_index=True)
+      st.dataframe(df_env,width=100,height=800,use_container_width=True,hide_index=True)
   #################################################################################################################################################################
   #################################################################################################################################################################
 def get_url_params():
