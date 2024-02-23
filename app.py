@@ -1860,7 +1860,7 @@ def main():
               }
               """,
       ):
-      st.title("Βαρέα Μέταλα")
+      st.title("Δείκτες Βαρέων Μετάλων")
     if (df_filtered["id_ergazomenou"].nunique()<privacy_limit):
       st.warning(warning_message,icon="⚠️")
     else:
@@ -2170,7 +2170,7 @@ def main():
   ###################################################################################################################################################################  
     
   #Λοιποί Δείκτες - Section:
-  elif choose== "Λοιποί Δείκτες":
+  elif choose== "Λοιποί":
     with stylable_container(
       key="Loipoi_Deiktes_title",
           css_styles="""
@@ -2183,7 +2183,7 @@ def main():
               }
               """,
       ):
-      st.title("Λοιποί Δείκτες:")
+      st.title("Λοιποί Δείκτες")
     if (df_filtered["id_ergazomenou"].nunique()<privacy_limit):
       st.warning(warning_message,icon="⚠️")
     else:
