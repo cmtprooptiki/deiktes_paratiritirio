@@ -3320,6 +3320,12 @@ def main():
     df_env=pd.json_normalize(response, max_level=2)
     df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
 
+    if df_env.value[df_env["metric.name"]=="PM10"] >50:
+      color="red"
+    else:
+      color="green"
+
+
     st.dataframe(df_env,
                  width=None,
                  height=800,
