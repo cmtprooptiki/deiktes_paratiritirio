@@ -255,7 +255,7 @@ def kpis_hist(value):
     # Initialize figure with subplots
     fig_kpis_hist = make_subplots(
       rows=2, cols=5,
-      column_widths=[0.25,0.20,0.15,0.15,0.15],
+      column_widths=[0.23,0.23,0.15,0.15,0.17],
       row_heights=[0.05, 0.95],
       specs=[[{"type": "indicator"}, {"type": "indicator"},{"type": "indicator"},{"type": "indicator"},{"type": "indicator"}],
            [{"type": "Histogram","colspan":5},None,None,None,None]])
