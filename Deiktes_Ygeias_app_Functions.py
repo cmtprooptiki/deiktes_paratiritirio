@@ -274,7 +274,7 @@ def kpis_hist(value):
                   value=round(value.mean(),1),
                   align="left",
                   number={"font": {"size": 30,"color":color}},
-                  title={"text":"Μέσος όρος","font":{"size":20,"color":"gray"},"align":"left"}
+                  title={"text":"Μ.O.","font":{"size":20,"color":"gray"},"align":"left"}
                   ),row=1,col=2)
     fig_kpis_hist.add_trace(go.Indicator(
                   value=round(value.min(),1),
