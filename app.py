@@ -3114,7 +3114,7 @@ def main():
               }
               """,
       ):
-      st.subheader("Συγκρίσεις Δεικτών ανά Φύλο:")
+      st.subheader("Aνά Φύλο:")
       
       #Selection of columns end with "_CAT":
       cat_columns=[]
@@ -3172,7 +3172,7 @@ def main():
             }
             """,
     ):
-      st.subheader("Συγκρίσεις Δεικτών ανά Χώρο Εργασίας:")
+      st.subheader("Aνά Χώρο Εργασίας:")
       with st.container(border=True):
         value=st.selectbox("Επιλέξτε Δείκτη: ",options=cat_columns)
       #Creation of DataFrame per Working Sector:
@@ -3182,7 +3182,7 @@ def main():
       extra_stats_space_df=extra_stats_space_df.reset_index()
       total_counts_space=extra_stats_space_df.groupby("xoros_ergasias")["count"].transform("sum")
       extra_stats_space_df["count(%)"]=round((extra_stats_space_df["count"]/total_counts_space)*100,1)
-      st.write(extra_stats_space_df)
+      #st.write(extra_stats_space_df)
 
       #Creation of Grouped Barplot according to space:
       fig =px.histogram(
@@ -3202,7 +3202,7 @@ def main():
       fig.update_layout(hoverlabel_font_size=16)
       fig.update_traces(textfont_size=16)
       fig.update_layout(legend_title_font_size=15, legend_font_size=15)
-      st.write(fig,use_container_width=True)
+      #st.write(fig,use_container_width=True)
 
     #2: Container with overview statistics for exposure years:
     with stylable_container(
@@ -3217,7 +3217,7 @@ def main():
             }
             """,
     ):
-      st.subheader("Συγκρίσεις Δεικτών ανά Έτη Έκθεσης στην παρούσα θέση:")
+      st.subheader("Aνά Έτη Έκθεσης στην παρούσα θέση:")
       with st.container(border=True):
         value=st.selectbox("Επιλέξτε Δείκτη:  ",options=cat_columns)
       #Creation of DataFrame per Working Sector:
@@ -3227,7 +3227,7 @@ def main():
       extra_stats_ekthesi_df=extra_stats_ekthesi_df.reset_index()
       total_counts_ekthesi=extra_stats_ekthesi_df.groupby("eth_ekthesis")["count"].transform("sum")
       extra_stats_ekthesi_df["count(%)"]=round((extra_stats_ekthesi_df["count"]/total_counts_ekthesi)*100,1)
-      st.write(extra_stats_ekthesi_df)
+      #st.write(extra_stats_ekthesi_df)
 
       #Creation of Grouped Barplot according to space:
       fig =px.histogram(
@@ -3267,7 +3267,7 @@ def main():
               }
               """,
       ):
-      st.title("Πίνακας Δεδομένων:")
+      st.title("Πίνακας Δεδομένων")
     with stylable_container(
       key="Expander",
           css_styles="""
@@ -3288,7 +3288,7 @@ def main():
       st.success("Το αρχείο κατέβηκε με επιτυχία!",icon="✅")
   #################################################################################################################################################################
   #Overview Dashboard - Section:
-  if choose == "Περιβαλλοντικές Μετρήσεις":
+  if choose == "Περιβάλλοντος":
     with stylable_container(
       key="Perivallon",
           css_styles="""
@@ -3301,7 +3301,7 @@ def main():
               }
               """,
       ):
-      st.title("Περιβαλλοντικές Μετρήσεις:")
+      st.title("Περιβαλλοντικές Μετρήσεις")
   #################################################################################################################################################################
   #################################################################################################################################################################
 def get_url_params():
