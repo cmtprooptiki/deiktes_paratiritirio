@@ -3340,7 +3340,10 @@ def main():
         'metric_name_2': (50, 150),  # Define lower and upper limit for metric_name_2
         # Add more metric names and their corresponding limits as needed
     }
-    st.dataframe(df_env,
+    # Apply color function to the DataFrame
+    df_env_styled = df_env.style.apply(colorize, axis=1)
+
+    st.dataframe(df_env_styled,
                  width=None,
                  height=800,
                  use_container_width=True,
