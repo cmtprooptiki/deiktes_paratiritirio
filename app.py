@@ -3137,7 +3137,7 @@ def main():
       extra_stats_sex_df=extra_stats_sex_df.reset_index()
       total_counts_sex=extra_stats_sex_df.groupby("gender")["count"].transform("sum")
       extra_stats_sex_df["count(%)"]=round((extra_stats_sex_df["count"]/total_counts_sex)*100,1)
-      st.write(extra_stats_sex_df)
+      #st.write(extra_stats_sex_df)
 
       #Creation of Grouped Barplot according to Gender
       fig =px.histogram(
@@ -3202,7 +3202,7 @@ def main():
       fig.update_layout(hoverlabel_font_size=16)
       fig.update_traces(textfont_size=16)
       fig.update_layout(legend_title_font_size=15, legend_font_size=15)
-      #st.write(fig,use_container_width=True)
+      st.write(fig,use_container_width=True)
 
     #2: Container with overview statistics for exposure years:
     with stylable_container(
