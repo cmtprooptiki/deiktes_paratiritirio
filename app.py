@@ -178,7 +178,7 @@ def main():
       if role=="admin":
 
         choose = option_menu(menu_title="Δείκτες Υγείας", options=["Επισκόπηση","Εργαστηριακοί","Βαρέων Μετάλων", "Λοιποί", "Εργασιακής Ικανοποίησης", "Εργατικών Ατυχημάτων-Απουσιασμού","Συγκρίσεις","Περιβάλλοντος","Πίνακας Δεδομένων"],
-                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart','table',"globe-americas"],
+                            icons=['pie-chart','capsule','exclamation-octagon','clipboard-heart', 'emoji-smile', 'exclamation-triangle','bar-chart','globe-americas','table'],
                             menu_icon="activity", default_index=0,
                              styles={
                                     # "container": {"padding": "5!important", "background-color": "#fafafa"},
