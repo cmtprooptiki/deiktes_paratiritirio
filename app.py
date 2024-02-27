@@ -3323,24 +3323,24 @@ def main():
     response = requests.get(url, verify=False)
  
     # response = json.loads(requests.get("https://backend.paratiritirio-edsna.gr:5000/buildingmetrics-public?api_key=37ca1953-2a98-4623-8a51-99729ca432da").text,verify=True)
-    # df_env=pd.json_normalize(response, max_level=2)
-    # df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
+    df_env=pd.json_normalize(response, max_level=2)
+    df_env=df_env[["building.name","building.category","metric.name","value","metric.unit","metric.limit_desc","year"]]
 
-    # st.dataframe(df_env,
-    #              width=None,
-    #              height=800,
-    #              use_container_width=True,
-    #              hide_index=True,
-    #              column_config={
-    #               "building.name": "Σημείο Μέτρησης",
-    #               "building.category":"Χώρος Εργασίας",
-    #               "metric.name":"Όνομα Ρύπου",
-    #               "value":"Τιμή Μέτρησης",
-    #               "metric.unit":"Μονάδα Μέτρησης",
-    #               "metric.limit_desc":"Όρια",
-    #               "year":"Περίοδος Μέτρησης"
-    #              }
-    #              )
+    st.dataframe(df_env,
+                 width=None,
+                 height=800,
+                 use_container_width=True,
+                 hide_index=True,
+                 column_config={
+                  "building.name": "Σημείο Μέτρησης",
+                  "building.category":"Χώρος Εργασίας",
+                  "metric.name":"Όνομα Ρύπου",
+                  "value":"Τιμή Μέτρησης",
+                  "metric.unit":"Μονάδα Μέτρησης",
+                  "metric.limit_desc":"Όρια",
+                  "year":"Περίοδος Μέτρησης"
+                 }
+                 )
   #################################################################################################################################################################
   #################################################################################################################################################################
 def get_url_params():
