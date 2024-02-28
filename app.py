@@ -19,7 +19,7 @@ hiden_menu="""
 }
 
 #GithubIcon {
-  visibility:hidden;
+  dispaly:one;
 }
 </style>
 """
