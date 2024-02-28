@@ -21,7 +21,7 @@ hiden_menu="""
 """
 hiden_actionbutton="""
 <style>
-##GithubIcon {
+#GithubIcon {
   visibility:hidden;
 }
 </style>
