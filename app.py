@@ -21,7 +21,7 @@ hiden_menu="""
 """
 hiden_actionbutton="""
 <style>
-#stActionButton {
+#stToolBar {
   visibility:hidden;
 }
 </style>
