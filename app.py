@@ -21,7 +21,7 @@ hiden_menu="""
 """
 hiden_actionbutton="""
 <style>
-#stToolbar {
+##GithubIcon {
   visibility:hidden;
 }
 </style>
