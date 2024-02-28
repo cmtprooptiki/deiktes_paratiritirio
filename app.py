@@ -17,10 +17,7 @@ hiden_menu="""
 #MainMenu {
   visibility:hidden;
 }
-</style>
-"""
-hiden_actionbutton="""
-<style>
+
 #GithubIcon {
   visibility:hidden;
 }
@@ -42,8 +39,7 @@ def main():
   role=get_url_params()
   #######################################################################################################################################################################
   #######################################################################################################################################################################
-  st.markdown(hiden_actionbutton,unsafe_allow_html=True)
-  st.markdown(hiden_actionbutton,unsafe_allow_html=True)
+  st.markdown(hiden_menu,unsafe_allow_html=True)
   #Read the data:
   # Export from vidavo:
   df=pd.read_excel("test_for_cat_creations.xlsx")
