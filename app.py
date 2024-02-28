@@ -14,7 +14,7 @@ import json
 from Deiktes_Ygeias_app_Functions import *
 hiden_menu="""
 <style>
-#header {
+#MainMenu {
   visibility:hidden;
 }
 </style>
