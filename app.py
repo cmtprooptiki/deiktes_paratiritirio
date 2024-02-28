@@ -12,6 +12,13 @@ import requests
 import json
 #Call the functions for the Vis
 from Deiktes_Ygeias_app_Functions import *
+hiden_menu="""
+<style>
+#header {
+  visibility:hidden;
+}
+</style>
+"""
 
 def main():
   #######################################################################################################################################################################
@@ -28,7 +35,7 @@ def main():
   role=get_url_params()
   #######################################################################################################################################################################
   #######################################################################################################################################################################
-
+  st.markdown(hiden_menu,unsafe_allow_html=True)
   #Read the data:
   # Export from vidavo:
   df=pd.read_excel("test_for_cat_creations.xlsx")
