@@ -22,8 +22,8 @@ hiden_menu="""
   display:none;
 }
 
-.viewerBadge_container__r5tak styles_viewerBadge__CvC9N{
-  display:none;
+.viewerBadge_container__r5tak styles_viewerBadge__CvC9N {
+  visibility:hidden;
 }
 
 </style>
