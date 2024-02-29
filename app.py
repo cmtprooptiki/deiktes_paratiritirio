@@ -22,10 +22,6 @@ hiden_menu="""
   display:none;
 }
 
-.viewerBadge_link__qRIco {
-  display:none;
-}
-
 </style>
 """
 
