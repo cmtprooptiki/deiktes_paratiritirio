@@ -18,8 +18,8 @@ hiden_menu="""
   visibility:hidden;
 }
 
-#GithubIcon {
-  dispaly:one;
+.stActionButton {
+  display:none;
 }
 </style>
 """
