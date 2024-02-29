@@ -23,7 +23,7 @@ hiden_menu="""
 }
 
 .viewerBadge_container__r5tak styles_viewerBadge__CvC9N {
-  visibility:hidden;
+  display:none;
 }
 
 </style>
