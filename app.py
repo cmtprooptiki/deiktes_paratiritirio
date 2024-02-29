@@ -22,7 +22,7 @@ hiden_menu="""
   display:none;
 }
 
-.viewerBadge_container__r5tak styles_viewerBadge__CvC9N {
+.viewerBadge_link__qRIco {
   display:none;
 }
 
@@ -44,7 +44,7 @@ def main():
   role=get_url_params()
   #######################################################################################################################################################################
   #######################################################################################################################################################################
-  #st.markdown(hiden_menu,unsafe_allow_html=True)
+  st.markdown(hiden_menu,unsafe_allow_html=True)
   #Read the data:
   # Export from vidavo:
   df=pd.read_excel("test_for_cat_creations.xlsx")
