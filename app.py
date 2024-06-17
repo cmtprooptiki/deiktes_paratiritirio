@@ -77,9 +77,11 @@ def main():
   #Calculation of "Ergasthriakoi Deiktes" in Categorical Format:
 
   #Αρτηριακή Πίεση - Συστολική
-  df["systoliki_piesi_CAT"]=np.where(df["systoliki_piesi"]>140,"ARTIRIAKH YPERTASI",np.where(df["systoliki_piesi"].isna(),"np.nan","FISIOLOGIKH"))
+  df["systoliki_piesi_CAT"]=np.where(df["systoliki_piesi"]>140,"APTIPIAKH ΥΠΕΡΤΑΣΗ",np.where(df["systoliki_piesi"].isna(),"np.nan","ΦΥΣΙΟΛΟΓΙΚΗ"))
   #Αρτηριακή Πίεση - Διαστολική
-  df["diastoliki_piesi_CAT"]=np.where(df["diastoliki_piesi"]>90,"ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ",np.where(df["diastoliki_piesi"].isna(),np.nan,"ΦΥΣΙΟΛΟΓΙΚΗ"))
+  df["diastoliki_piesi_CAT"]=np.where(df["diastoliki_piesi"]>90,"ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ",np.where(df["diastoliki_piesi"].isna(),"np.nan","ΦΥΣΙΟΛΟΓΙΚΗ"))
+
+  st.write(df)
   #Αιματοκρίτης (HT%)
   df["ht_aimatokritis_CAT"]=np.where(((df["gender"]=="man") & ((df["ht_aimatokritis"]>=40)&(df["ht_aimatokritis"]<=54))),"ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ",np.where(((df["gender"]=="woman") & ((df["ht_aimatokritis"]>=36)&(df["ht_aimatokritis"]<=48))),"ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ",np.where(df["ht_aimatokritis"].isna(),np.nan,"ΠΑΘΟΛΟΓΙΚΗ")))
   #Αιμοσφαιρίνη (Hb)
