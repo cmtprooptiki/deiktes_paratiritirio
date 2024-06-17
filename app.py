@@ -77,6 +77,8 @@ def main():
   #Calculation of "Ergasthriakoi Deiktes" in Categorical Format:
 
   #Αρτηριακή Πίεση - Συστολική
+  # Convert "systoliki_piesi" to numeric type, handle errors gracefully if conversion fails
+  df["systoliki_piesi"] = pd.to_numeric(df["systoliki_piesi"], errors='coerce')
   df["systoliki_piesi_CAT"]=np.where(df["systoliki_piesi"]>140,"ARTIRIAKH YPERTASI",np.where(df["systoliki_piesi"].isna(),np.nan,"FISIOLOGIKH"))
   #Αρτηριακή Πίεση - Διαστολική
   df["diastoliki_piesi_CAT"]=np.where(df["diastoliki_piesi"]>90,"ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ",np.where(df["diastoliki_piesi"].isna(),np.nan,"ΦΥΣΙΟΛΟΓΙΚΗ"))
