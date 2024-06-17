@@ -77,9 +77,9 @@ def main():
   #Calculation of "Ergasthriakoi Deiktes" in Categorical Format:
 
   #Αρτηριακή Πίεση - Συστολική
-  df["systoliki_piesi_CAT"]=np.where(df["systoliki_piesi"]>140,"APTIPIAKH ΥΠΕΡΤΑΣΗ",np.where(df["systoliki_piesi"].isna(),"np.nan","ΦΥΣΙΟΛΟΓΙΚΗ"))
+  df["systoliki_piesi_CAT"]=np.where(df["systoliki_piesi"]>140,"APTIPIAKH ΥΠΕΡΤΑΣΗ",np.where(df["systoliki_piesi"].isna(),np.nan,"ΦΥΣΙΟΛΟΓΙΚΗ"))
   #Αρτηριακή Πίεση - Διαστολική
-  df["diastoliki_piesi_CAT"]=np.where(df["diastoliki_piesi"]>90,"ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ",np.where(df["diastoliki_piesi"].isna(),"np.nan","ΦΥΣΙΟΛΟΓΙΚΗ"))
+  df["diastoliki_piesi_CAT"]=np.where(df["diastoliki_piesi"]>90,"ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ",np.where(df["diastoliki_piesi"].isna(),np.nan,"ΦΥΣΙΟΛΟΓΙΚΗ"))
 
   st.write(df)
   #Αιματοκρίτης (HT%)
