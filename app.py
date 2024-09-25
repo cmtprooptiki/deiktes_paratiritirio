@@ -43,7 +43,7 @@ def main():
   st.markdown(hiden_menu,unsafe_allow_html=True)
   #Read the data:
   # Export from vidavo:
-  df=pd.read_excel("test_for_cat_creations.xlsx")
+  df=pd.read_excel("atomikos_fakelos_data_sep_2024.xlsx")
   # st.write(df)
   # st.write(df.dtypes)
   # Lista Ergazomenwn:
