@@ -251,7 +251,11 @@ def main():
         #Header
         st.sidebar.header("Επιλέξτε Φίλτρα:")
         #Create an instance of the DynamicFilters class
+        st.write("EFTASE EDW asadasdasdas")
+
         dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'xoros_ergasias','eth_ekthesis'])
+        st.write("EFTASE EDW ghrera")
+
         #Display the filters in your app:
         dynamic_filters.display_filters(location="sidebar")
         #Assign a filtered dataframe to a variable:
