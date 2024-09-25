@@ -43,7 +43,7 @@ def main():
   st.markdown(hiden_menu,unsafe_allow_html=True)
   #Read the data:
   # Export from vidavo:
-  df=pd.read_excel("atomikos_fakelos_data_sep_2024.xlsx")
+  df=pd.read_excel("test_for_cat_creations.xlsx")
   st.write(df)
   st.write(df.dtypes)
   # Lista Ergazomenwn:
@@ -60,10 +60,8 @@ def main():
   #Calculation of "Hlikiakes klaseis - Eti Ekthesis" in Categorical Format:
 
   #Ηλικιακές Κλάσεις
-  st.write("prin apo EDW")
-
   df["age_group"]=np.where((df["patient_age"]>=18)&(df["patient_age"]<=34),"18-34",np.where((df["patient_age"]>=35)&(df["patient_age"]<=44),"35-44",np.where((df["patient_age"]>=45)&(df["patient_age"]<=54),"45-54",np.where((df["patient_age"]>=55)&(df["patient_age"]<=64),"55-64",np.where(df["patient_age"]>=65,"65+",np.where(df["patient_age"].isna(),np.nan,np.nan))))))
-  st.write("EFTASE EDW")
+
   #Έτη έκθεσης
   #ΠΡΟΣΟΧΗ: Τώρα βάζω τυχαία την στήλη date να αλλαχτεί με την σωστή όταν θα έχω την λίστα εργαζομένων:
   df["hmeromhnia_enarksis_trexousas_thesis"] = pd.to_datetime(df["hmeromhnia_enarksis_trexousas_thesis"])
@@ -184,8 +182,7 @@ def main():
 
   #Αντικατάσταση με κατάλληλες τιμές NaN
   df=df.replace("nan",np.nan)
-  st.write(df)
-  st.write("EFTASE EDW222")
+  #st.write(df)
 
   ######################################################################################################################################################################
   ######################################################################################################################################################################
@@ -251,8 +248,6 @@ def main():
         #Header
         st.sidebar.header("Επιλέξτε Φίλτρα:")
         #Create an instance of the DynamicFilters class
-        st.write("EFTASE EDW asadasdasdas")
-
         dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'xoros_ergasias','eth_ekthesis'])
         st.write("EFTASE EDW ghrera")
         #Display the filters in your app:
