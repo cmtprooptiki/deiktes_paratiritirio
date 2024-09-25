@@ -45,7 +45,7 @@ def main():
   # Export from vidavo:
   df=pd.read_excel("test_for_cat_creations.xlsx")
   st.write(df)
-  print(df.info())
+  st.write(df.dtypes)
   # Lista Ergazomenwn:
   lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
   #st.write(lista_erg)
