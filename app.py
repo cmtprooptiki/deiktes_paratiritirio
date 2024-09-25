@@ -253,7 +253,7 @@ def main():
         #Create an instance of the DynamicFilters class
         st.write("EFTASE EDW asadasdasdas")
 
-        dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'xoros_ergasias','eth_ekthesis'])
+        dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'xoros_ergasias'])
         st.write("EFTASE EDW ghrera")
 
         #Display the filters in your app:
