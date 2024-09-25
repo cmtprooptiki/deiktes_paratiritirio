@@ -44,15 +44,15 @@ def main():
   #Read the data:
   # Export from vidavo:
   df=pd.read_excel("test_for_cat_creations.xlsx")
-  st.write(df)
-  st.write(df.dtypes)
+  # st.write(df)
+  # st.write(df.dtypes)
   # Lista Ergazomenwn:
   lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
-  st.write(lista_erg)
+  # st.write(lista_erg)
 
   #Merging df with lista ergazomenwn
   df=df.merge(lista_erg,on="id_ergazomenou",how="left")
-  st.write(df)
+  # st.write(df)
 
   ###################################################################################################################################################
   ###################################################################################################################################################
@@ -249,10 +249,8 @@ def main():
         st.sidebar.header("Επιλέξτε Φίλτρα:")
         #Create an instance of the DynamicFilters class
         dynamic_filters = DynamicFilters(df, filters=['gender', 'age_group', 'xoros_ergasias','eth_ekthesis'])
-        st.write("EFTASE EDW ghrera")
         #Display the filters in your app:
         dynamic_filters.display_filters(location="sidebar")
-        st.write("EFTASE EDW ghreraaaa")
         #Assign a filtered dataframe to a variable:
         df_filtered = dynamic_filters.filter_df()
         #link of creator
