@@ -73,6 +73,7 @@ def main():
   #df["ekthesi(years)"]=df["ekthesi(years)"].astype(int)
   #Έτη έκθεσης σε κλάσεις
   df["eth_ekthesis"]=np.where(df["ekthesi(years)"]<1,"<1 έτος",np.where((df["ekthesi(years)"]>=1)&(df["ekthesi(years)"]<=2),"1-2 έτη",np.where((df["ekthesi(years)"]>2)&(df["ekthesi(years)"]<=5),"3-5 έτη",np.where((df["ekthesi(years)"]>5)&(df["ekthesi(years)"]<=10),"6-10 έτη",np.where((df["ekthesi(years)"]>10)&(df["ekthesi(years)"]<=15),"11-15 έτη",np.where(df["ekthesi(years)"]>15,">15 έτη",np.where(df["ekthesi(years)"].isna(),np.nan,np.nan)))))))
+  st.write("EFTASE EDW")
 
   ###################################################################################################################################################
   ###################################################################################################################################################
