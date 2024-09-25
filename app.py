@@ -44,7 +44,7 @@ def main():
   #Read the data:
   # Export from vidavo:
   df=pd.read_excel("atomikos_fakelos_data_sep_2024.xlsx")
-  #st.write(df)
+  st.write(df)
 
   # Lista Ergazomenwn:
   lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
