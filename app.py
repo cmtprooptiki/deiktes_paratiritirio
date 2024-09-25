@@ -258,6 +258,7 @@ def main():
 
         #Display the filters in your app:
         dynamic_filters.display_filters(location="sidebar")
+        st.write("EFTASE EDW ghreraaaa")
         #Assign a filtered dataframe to a variable:
         df_filtered = dynamic_filters.filter_df()
         #link of creator
