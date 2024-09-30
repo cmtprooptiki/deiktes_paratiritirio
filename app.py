@@ -2654,12 +2654,12 @@ def main():
           st.subheader("Εμβολιασμός για HAV:") 
           #Times gia synartisis
           try:
-            val = round((df_filtered["embolio_hav"].value_counts().loc["yes"] / df_filtered["embolio_hav"].value_counts().sum()) * 100, 1)
+            val = round((df_filtered["embolio_hav"].value_counts().loc["Ναι"] / df_filtered["embolio_hav"].value_counts().sum()) * 100, 1)
           except KeyError:
             val=00.00
 
           try:
-            val2=round((df_filtered["embolio_hav"].value_counts().loc["no"]/df_filtered["embolio_hav"].value_counts().sum())*100,1)
+            val2=round((df_filtered["embolio_hav"].value_counts().loc["Όχι"]/df_filtered["embolio_hav"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
@@ -2683,12 +2683,12 @@ def main():
           st.subheader("Εμβολιασμός για HBV:") 
           #Times gia synartisis
           try:
-            val = round((df_filtered["embolio_hbv"].value_counts().loc["yes"] / df_filtered["embolio_hbv"].value_counts().sum()) * 100, 1)
+            val = round((df_filtered["embolio_hbv"].value_counts().loc["Ναι"] / df_filtered["embolio_hbv"].value_counts().sum()) * 100, 1)
           except KeyError:
             val=00.00
 
           try:
-            val2=round((df_filtered["embolio_hbv"].value_counts().loc["no"]/df_filtered["embolio_hbv"].value_counts().sum())*100,1)
+            val2=round((df_filtered["embolio_hbv"].value_counts().loc["Όχι"]/df_filtered["embolio_hbv"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
@@ -2712,12 +2712,12 @@ def main():
           st.subheader("Εμβολιασμός για Τέτανο:") 
           #Times gia synartisis
           try:
-            val = round((df_filtered["embolio_tetano"].value_counts().loc["yes"] / df_filtered["embolio_tetano"].value_counts().sum()) * 100, 1)
+            val = round((df_filtered["embolio_tetano"].value_counts().loc["Ναι"] / df_filtered["embolio_tetano"].value_counts().sum()) * 100, 1)
           except KeyError:
             val=00.00
 
           try:
-            val2=round((df_filtered["embolio_tetano"].value_counts().loc["no"]/df_filtered["embolio_tetano"].value_counts().sum())*100,1)
+            val2=round((df_filtered["embolio_tetano"].value_counts().loc["Όχι"]/df_filtered["embolio_tetano"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
