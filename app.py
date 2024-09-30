@@ -2233,12 +2233,12 @@ def main():
             val=00.00
 
           try:
-            val2=round((df_filtered["systoliki_piesi_CAT"].value_counts().loc["ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ"]/df_filtered["systoliki_piesi_CAT"].value_counts().sum())*100,1)
+            val2=round((df_filtered["systoliki_piesi_CAT"].value_counts().loc["APTIPIAKH ΥΠΕΡΤΑΣΗ"]/df_filtered["systoliki_piesi_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΑΡΤΗΡΙΑΚΗ ΥΠΕΡΤΑΣΗ")
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","APTIPIAKH ΥΠΕΡΤΑΣΗ")
 
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
