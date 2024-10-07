@@ -1258,7 +1258,7 @@ def main():
           fig_kpis_hist=kpis_hist(value)
 
           #Show the plot:
-          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False},key="key")
 
     ###################################################################################################################################################################
       
