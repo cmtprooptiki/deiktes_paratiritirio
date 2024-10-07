@@ -827,7 +827,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΑΡΝΗΤΙΚΟ","ΘΕΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes8")
           
       with col2:
         with stylable_container(
@@ -859,7 +859,7 @@ def main():
           ffig_two_cat_pie=two_cat_pie (val,val2,"ΑΡΝΗΤΙΚΟ","ΘΕΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes9")
       
     ###################################################################################################################################################################
       
@@ -2666,7 +2666,7 @@ def main():
           #Call of the function
           fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="LoipoiDeiktes7")
       with col2:
         with stylable_container(
           key="Loipoi_Deiktes8",
@@ -2695,7 +2695,7 @@ def main():
           #Call of the function
           fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="τεστ")
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="LoipoiDeiktes8")
       with col3:
         with stylable_container(
           key="Loipoi_Deiktes9",
@@ -2724,7 +2724,7 @@ def main():
           #Call of the function
           fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="test2")
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="LoipoiDeiktes9")
   ################################################################################################################################################################
 
   ##################################################################################################################################################################
