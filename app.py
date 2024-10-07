@@ -2695,7 +2695,7 @@ def main():
           #Call of the function
           fig_two_cat_pie=two_cat_pie (val,val2,"ΝΑΙ","ΟΧΙ")
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="τεστ")
       with col3:
         with stylable_container(
           key="Loipoi_Deiktes9",
