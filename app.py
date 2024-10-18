@@ -549,7 +549,7 @@ def main():
 
           
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes1")
           
         with col2:
         #Times gia sinartisi
@@ -597,7 +597,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes3")
           
         with col2:
         #Times gia sinartisi
@@ -643,7 +643,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes4")
           
         with col2:
         #Times gia sinartisi
@@ -689,7 +689,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes5")
           
         with col2:
         #Times gia sinartisi
@@ -736,7 +736,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes6")
           
         with col2:
         #Times gia sinartisi
@@ -782,7 +782,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes7")
           
         with col2:
         #Times gia sinartisi
@@ -896,7 +896,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes10")
           
         with col2:
         #Times gia sinartisi
@@ -988,7 +988,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes12")
           
         with col2:
         #Times gia sinartisi
@@ -1039,7 +1039,7 @@ def main():
           fig_three_cat_pie=three_cat_pie (val,val2,val3,"ΕΠΙΘΥΜΗΤΗ","ΧΑΜΗΛΗ","ΥΨΗΛΗ")
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes13")
           
         with col2:
             #Times gia sinartisi
@@ -1094,7 +1094,7 @@ def main():
           fig_four_cat_pie_v2=four_cat_pie_v2 (val,val2,val3,val4,"ΙΔΑΝΙΚΗ","ΣΧ. ΙΔΑΝ.","ΟΡ. ΥΨΗΛ.","ΥΨΗΛΗ")
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie_v2, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes14")
 
           with col2:
             #Times gia sinartisi
@@ -1147,7 +1147,7 @@ def main():
 
 
           #Show the plot
-          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_three_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes15")
           
         with col2:
             #Times gia sinartisi
@@ -1202,7 +1202,7 @@ def main():
           fig_four_cat_pie=four_cat_pie (val,val2,val3,val4,"ΒΕΛΤΙΣΤΗ","ΟΡ. ΥΨΗΛ.","ΥΨΗΛΗ","ΠΟΛΥ ΥΨ.")
 
           #Show the plot
-          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_four_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes16")
 
           with col2:
             #Times gia sinartisi
@@ -1248,7 +1248,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes17")
           
         with col2:
         #Times gia sinartisi
@@ -1387,7 +1387,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes20")
           
         with col2:
         #Times gia sinartisi
@@ -1663,7 +1663,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΦΥΣΙΟΛΟΓΙΚΗ","ΠΑΘΟΛΟΓΙΚΗ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes26")
           
         with col2:
         #Times gia sinartisi
@@ -1709,7 +1709,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes27")
           
         with col2:
         #Times gia sinartisi
@@ -1755,7 +1755,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΕΠΑΡΚΕΙΑ","ΑΡΝΗΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes28")
           
         with col2:
         #Times gia sinartisi
@@ -1801,7 +1801,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes29")
           
         with col2:
         #Times gia sinartisi
@@ -1847,7 +1847,7 @@ def main():
           fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
 
           #Show the plot
-          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False})
+          st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes30")
           
         with col2:
         #Times gia sinartisi
