@@ -309,6 +309,8 @@ def kpis_hist(value):
     name=value.name
     fig_kpis_hist.update_xaxes(title_text=name, row=2, col=1)
     fig_kpis_hist.update_yaxes(title_text="", row=2, col=1)
+    # Set the maximum value of x-axis to the maximum value in the dataset
+    fig_kpis_hist.update_xaxes(range=[min(value), max(value)], row=2, col=1)
     fig_kpis_hist.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='rgba(0,0,0,0)')
     fig_kpis_hist.update_layout(hoverlabel_font_size=16)
     
