@@ -588,18 +588,18 @@ def main():
                   line_width=0,
               ),
               # Right shaded area
-              dict(
-                  type="rect",
-                  xref="x",
-                  yref="paper",
-                  x0=54,
-                  y0=0,
-                  x1=60,
-                  y1=0.8,
-                  fillcolor="red",
-                  opacity=0.2,
-                  line_width=0,
-              )
+              # dict(
+              #     type="rect",
+              #     xref="x",
+              #     yref="paper",
+              #     x0=54,
+              #     y0=0,
+              #     x1=60,
+              #     y1=0.8,
+              #     fillcolor="red",
+              #     opacity=0.2,
+              #     line_width=0,
+              # )
 
           ]
 
