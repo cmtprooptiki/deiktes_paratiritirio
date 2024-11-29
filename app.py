@@ -566,7 +566,7 @@ def main():
                   type="rect",
                   xref="x",
                   yref="paper",
-                  x0=min(value),
+                  x0=0,#min(value),
                   y0=0,
                   x1=40,
                   y1=0.8,
