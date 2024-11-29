@@ -604,7 +604,7 @@ def main():
           #Call of the function
           fig_kpis_hist=kpis_hist(value)
 
-          fig_kpis_hist.update_layout(shapes=shapes)
+          # fig_kpis_hist.update_layout(shapes=shapes)
 
           #Show the plot:
           st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
