@@ -250,7 +250,7 @@ def four_cat_pie_v2 (val,val2,val3,val4,label1,label2,label3,label4):
 #######################################################################################################################################
 
 ##Function for Histogramm with KPI's:
-def kpis_hist(value,min_value,max_value,bin_size):
+def kpis_hist(value):
 
     # Initialize figure with subplots
     fig_kpis_hist = make_subplots(
@@ -297,9 +297,9 @@ def kpis_hist(value,min_value,max_value,bin_size):
     fig_kpis_hist.add_trace(go.Histogram(
                   x=value,
                   xbins= dict(
-                      start=min_value,
-                      end=max_value,
-                      size=bin_size
+                      start=min(value),
+                      end=max(value),
+                      size=1
                   ),
                   #xbins=go.XBins(size=1),
                   #autobinx=True,
