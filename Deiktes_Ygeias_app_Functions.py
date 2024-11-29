@@ -296,13 +296,13 @@ def kpis_hist(value):
                   ),row=1,col=5)
     fig_kpis_hist.add_trace(go.Histogram(
                   x=value,
-                  xbins= dict(
-                      start=min(value),
-                      end=max(value),
-                      size=1
-                  ),
+                #   xbins= dict(
+                #       start=min(value),
+                #       end=max(value),
+                #       size=1
+                #   ),
                   #xbins=go.XBins(size=1),
-                  #autobinx=True,
+                  autobinx=True,
                   opacity=0.5,
                   #nbinsx=4,
                   #xaxis="x1",

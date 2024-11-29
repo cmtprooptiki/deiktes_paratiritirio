@@ -555,53 +555,51 @@ def main():
         #Times gia sinartisi
           #dataframe=df_filtered
           value=df_filtered["ht_aimatokritis"]
-          min_value=39,
-          max_value=52,
-          bin_size=2
+          
 
           # Create shaded areas using shapes
-          shapes = [
-              # Left shaded area
-              dict(
-                  type="rect",
-                  xref="x",
-                  yref="paper",
-                  x0=min(value),
-                  y0=0,
-                  x1=40,
-                  y1=0.8,
-                  fillcolor="red",
-                  opacity=0.2,
-                  line_width=0,
-              ),
-              # Right shaded area
-              dict(
-                  type="rect",
-                  xref="x",
-                  yref="paper",
-                  x0=40,
-                  y0=0,
-                  x1=54,
-                  y1=0.8,
-                  fillcolor="green",
-                  opacity=0.2,
-                  line_width=0,
-              ),
-              # Right shaded area
-              # dict(
-              #     type="rect",
-              #     xref="x",
-              #     yref="paper",
-              #     x0=54,
-              #     y0=0,
-              #     x1=60,
-              #     y1=0.8,
-              #     fillcolor="red",
-              #     opacity=0.2,
-              #     line_width=0,
-              # )
+          # shapes = [
+          #     # Left shaded area
+          #     dict(
+          #         type="rect",
+          #         xref="x",
+          #         yref="paper",
+          #         x0=min(value),
+          #         y0=0,
+          #         x1=40,
+          #         y1=0.8,
+          #         fillcolor="red",
+          #         opacity=0.2,
+          #         line_width=0,
+          #     ),
+          #     # Right shaded area
+          #     dict(
+          #         type="rect",
+          #         xref="x",
+          #         yref="paper",
+          #         x0=40,
+          #         y0=0,
+          #         x1=54,
+          #         y1=0.8,
+          #         fillcolor="green",
+          #         opacity=0.2,
+          #         line_width=0,
+          #     ),
+          #     # Right shaded area
+          #     dict(
+          #         type="rect",
+          #         xref="x",
+          #         yref="paper",
+          #         x0=54,
+          #         y0=0,
+          #         x1=60,
+          #         y1=0.8,
+          #         fillcolor="red",
+          #         opacity=0.2,
+          #         line_width=0,
+          #     )
 
-          ]
+          # ]
 
           #Call of the function
           fig_kpis_hist=kpis_hist(value)
