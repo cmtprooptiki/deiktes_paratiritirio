@@ -555,9 +555,55 @@ def main():
         #Times gia sinartisi
           #dataframe=df_filtered
           value=df_filtered["ht_aimatokritis"]
-          
+
+          # Create shaded areas using shapes
+          shapes = [
+              # Left shaded area
+              dict(
+                  type="rect",
+                  xref="x",
+                  yref="paper",
+                  x0=0,
+                  y0=0,
+                  x1=40,
+                  y1=1,
+                  fillcolor="red",
+                  opacity=0.3,
+                  line_width=0,
+              ),
+              # Right shaded area
+              dict(
+                  type="rect",
+                  xref="x",
+                  yref="paper",
+                  x0=40,
+                  y0=0,
+                  x1=54,
+                  y1=1,
+                  fillcolor="red",
+                  opacity=0.3,
+                  line_width=0,
+              ),
+              # Right shaded area
+              dict(
+                  type="rect",
+                  xref="x",
+                  yref="paper",
+                  x0=54,
+                  y0=0,
+                  x1=max(value),
+                  y1=1,
+                  fillcolor="red",
+                  opacity=0.3,
+                  line_width=0,
+              )
+
+          ]
+
           #Call of the function
           fig_kpis_hist=kpis_hist(value)
+
+          fig.update_layout(shapes=shapes)
 
           #Show the plot:
           st.plotly_chart(fig_kpis_hist, use_container_width=True,config={'displayModeBar': False})
