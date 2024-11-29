@@ -579,7 +579,7 @@ def main():
                   x0=40,
                   y0=0,
                   x1=54,
-                  y1=1,
+                  y1=0.5,
                   fillcolor="green",
                   opacity=0.3,
                   line_width=0,
