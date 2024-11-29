@@ -594,7 +594,7 @@ def main():
                   yref="paper",
                   x0=54,
                   y0=0,
-                  x1=max(value),
+                  x1=60,
                   y1=0.8,
                   fillcolor="red",
                   opacity=0.2,
