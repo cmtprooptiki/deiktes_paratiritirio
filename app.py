@@ -555,6 +555,9 @@ def main():
         #Times gia sinartisi
           #dataframe=df_filtered
           value=df_filtered["ht_aimatokritis"]
+          min_value=39,
+          max_value=52,
+          bin_size=2
 
           # Create shaded areas using shapes
           shapes = [
@@ -601,7 +604,7 @@ def main():
           ]
 
           #Call of the function
-          fig_kpis_hist=kpis_hist(value)
+          fig_kpis_hist=kpis_hist(value,min_value,max_value,bin_size)
 
           fig_kpis_hist.update_layout(shapes=shapes)
 

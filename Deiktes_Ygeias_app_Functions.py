@@ -250,7 +250,7 @@ def four_cat_pie_v2 (val,val2,val3,val4,label1,label2,label3,label4):
 #######################################################################################################################################
 
 ##Function for Histogramm with KPI's:
-def kpis_hist(value):
+def kpis_hist(value,min_value,max_value,bin_size):
 
     # Initialize figure with subplots
     fig_kpis_hist = make_subplots(
@@ -296,8 +296,13 @@ def kpis_hist(value):
                   ),row=1,col=5)
     fig_kpis_hist.add_trace(go.Histogram(
                   x=value,
+                  xbins= dict(
+                      start=min_value,
+                      end=max_value,
+                      size=bin_size
+                  ),
                   #xbins=go.XBins(size=1),
-                  autobinx=True,
+                  #autobinx=True,
                   opacity=0.5,
                   #nbinsx=4,
                   #xaxis="x1",
@@ -310,7 +315,7 @@ def kpis_hist(value):
     fig_kpis_hist.update_xaxes(title_text=name, row=2, col=1)
     fig_kpis_hist.update_yaxes(title_text="", row=2, col=1)
     # Set the maximum value of x-axis to the maximum value in the dataset
-    fig_kpis_hist.update_xaxes(range=[min(value), max(value)], row=2, col=1)
+    #fig_kpis_hist.update_xaxes(range=[min(value), max(value)], row=2, col=1)
     fig_kpis_hist.update_layout(paper_bgcolor='rgba(0,0,0,0)',plot_bgcolor='rgba(0,0,0,0)')
     fig_kpis_hist.update_layout(hoverlabel_font_size=16)
     
