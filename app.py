@@ -604,7 +604,7 @@ def main():
           ]
 
           #Call of the function
-          fig_kpis_hist=kpis_hist(value,39,52,2)
+          fig_kpis_hist=kpis_hist(value,39.1,51.4,2)
 
           fig_kpis_hist.update_layout(shapes=shapes)
 
