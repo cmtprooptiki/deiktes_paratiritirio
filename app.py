@@ -577,7 +577,7 @@ def main():
                   xref="x",
                   yref="paper",
                   x0=40,
-                  y0=0.1,
+                  y0=0,
                   x1=54,
                   y1=1,
                   fillcolor="green",
