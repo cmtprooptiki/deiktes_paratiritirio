@@ -571,7 +571,7 @@ def main():
                   x1=40,
                   y1=0.8,
                   fillcolor="red",
-                  opacity=0.1,
+                  opacity=0.2,
                   line_width=0,
               ),
               # Right shaded area
@@ -597,7 +597,7 @@ def main():
                   x1=max(value),
                   y1=0.8,
                   fillcolor="red",
-                  opacity=0.1,
+                  opacity=0.2,
                   line_width=0,
               )
 
