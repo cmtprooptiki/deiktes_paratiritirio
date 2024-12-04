@@ -155,7 +155,7 @@ def main():
   #Ακοολογικός έλεγχος (Ακουόγραμα)
   df["akouograma_CAT"]=np.where((df["akouograma"]>=0)&(df["akouograma"]<=25),"ΦΥΣΙΟΛΟΓΙΚΗ ΑΚΟΗ",np.where((df["akouograma"]>25)&(df["akouograma"]<=55),"ΜΙΚΡΟΥ-ΜΕΤΡΙΟΥ ΒΑΘΜΟΥ ΒΑΡΗΚΟΙΑ",np.where((df["akouograma"]>55)&(df["akouograma"]<=90),"ΜΕΤΡΙΟΥ-ΣΟΒΑΡΟΥ ΒΑΘΜΟΥ ΒΑΡΗΚΟΙΑ",np.where(df["akouograma"]>90,"ΚΩΦΩΣΗ",np.where(df["akouograma"].isna(),np.nan,np.nan)))))
   #Λειτουργικός έλεγχος αναπνοής (σπιρομέτρηση)
-  df["spirometrisi_CAT"]=np.where((df["spirometrisi_fvc"]>80)&(df["spirometrisi_fev1"]>80)&(df["spirometrisi_fev1_fvc"]>70),"ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ",np.where((df["spirometrisi_fvc"]>80)&(df["spirometrisi_fev1_fvc"]<70),"ΣΥΜΒΑΤΟ ΜΕ ΑΠΟΦΡΑΚΤΙΚΟ ΣΥΝΔΡΟΜΟ",np.where((df["spirometrisi_fvc"]<80)&(df["spirometrisi_fev1_fvc"]>70),"ΣΥΜΒΑΤΟ ΜΕ ΠΕΡΙΟΡΙΣΤΙΚΟ ΣΥΝΔΡΟΜΟ",np.nan)))
+  df["spirometrisi_CAT"]=np.where((df["spirometrisi_fvc%"]>80)&(df["spirometrisi_fev1%"]>80)&(df["spirometrisi_fev1_fvc%"]>70),"ΕΝΤΟΣ ΦΥΣΙΟΛΟΓΙΚΩΝ ΟΡΙΩΝ",np.where((df["spirometrisi_fvc%"]>80)&(df["spirometrisi_fev1_fvc%"]<70),"ΣΥΜΒΑΤΟ ΜΕ ΑΠΟΦΡΑΚΤΙΚΟ ΣΥΝΔΡΟΜΟ",np.where((df["spirometrisi_fvc%"]<80)&(df["spirometrisi_fev1_fvc%"]>70),"ΣΥΜΒΑΤΟ ΜΕ ΠΕΡΙΟΡΙΣΤΙΚΟ ΣΥΝΔΡΟΜΟ",np.nan)))
   #Nordic Muscoloskeletal Questionnaire (εκτίμηση μυοσκελετικών παθήσεων) score
   df["ektimisi_myoskeletikon_pathiseon_CAT"]=np.where(df["ektimisi_myoskeletikon_pathiseon"]==0,"ΧΩΡΙΣ MSDS",np.where((df["ektimisi_myoskeletikon_pathiseon"]>=1)&(df["ektimisi_myoskeletikon_pathiseon"]<=4),"ΗΠΙΟ-ΜΕΤΡΙΟ MSDS",np.where((df["ektimisi_myoskeletikon_pathiseon"]>4)&(df["ektimisi_myoskeletikon_pathiseon"]<=8),"ΣΟΒΑΡΟ MSDS",np.where((df["ektimisi_myoskeletikon_pathiseon"]>8)&(df["ektimisi_myoskeletikon_pathiseon"]<=16),"ΠΟΛΥ ΣΟΒΑΡΟ MSDS",np.where(df["ektimisi_myoskeletikon_pathiseon"].isna(),np.nan,np.nan)))))
 
@@ -2644,7 +2644,7 @@ def main():
         st.subheader("Λειτουργικός έλεγχος αναπνοής (Σπιρομέτρηση):")
         with st.container(border=True):
           #Times gia sinartisi me filtro giati einai polles sthn spirometrisi
-          value=st.selectbox("Επιλέξτε Παράμετρο Ιστογράμματος:",options=["spirometrisi_fvc","spirometrisi_fev1","spirometrisi_fev1_fvc"])
+          value=st.selectbox("Επιλέξτε Παράμετρο Ιστογράμματος:",options=["spirometrisi_fvc%","spirometrisi_fev1%","spirometrisi_fev1_fvc%"])
         col1,col2 = st.columns(2)
 
         with col1:
