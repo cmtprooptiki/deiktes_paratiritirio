@@ -2450,7 +2450,7 @@ def main():
 
           with col2:
             #Times gia sinartisi
-            value=df_filtered["pack/years_CAT"]
+            value=df_filtered["pack/years"]
             
             #Call of the function
             fig_kpis_hist=kpis_hist(value)
