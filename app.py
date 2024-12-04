@@ -903,7 +903,7 @@ def main():
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2,"ΑΡΝΗΤΙΚΟ","ΘΕΤΙΚΟ")
+          ffig_two_cat_pie=two_cat_pie (val,val2,"ΑΡΝΗΤΙΚΟ","ΘΕΤΙΚΟ")
 
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes9")
