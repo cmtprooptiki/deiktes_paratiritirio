@@ -149,7 +149,7 @@ def main():
   #Δείκτης μάζας/σώματος (BMI index)
   df["diktis_mazas_somatos_bmi_CAT"]=np.where(df["diktis_mazas_somatos_bmi"].isna(),np.nan,np.where(df["diktis_mazas_somatos_bmi"]<20,"ΛΙΠΟΒΑΡΕΙΣ",np.where((df["diktis_mazas_somatos_bmi"]>=20)&(df["diktis_mazas_somatos_bmi"]<25),"ΦΥΣΙΟΛΟΓΙΚΟΙ",np.where((df["diktis_mazas_somatos_bmi"]>=25)&(df["diktis_mazas_somatos_bmi"]<30),"ΥΠΕΡΒΑΡΟΙ",np.where(df["diktis_mazas_somatos_bmi"]>=30,"ΠΑΧΥΣΑΡΚΟΙ",np.nan)))))
   #Καπνιστικές Συνήθειες
-  df["kapnistikes_synithies_devided_by_20_CAT"]=np.where(df["kapnistikes_synithies_devided_by_20"]<1,"ΜΗ ΚΑΠΝΙΣΤΗΣ",np.where((df["kapnistikes_synithies_devided_by_20"]>=1)&(df["kapnistikes_synithies_devided_by_20"]<=20),"ΗΠΙΟΣ ΚΑΠΝΙΣΤΗΣ",np.where((df["kapnistikes_synithies_devided_by_20"]>20)&(df["kapnistikes_synithies_devided_by_20"]<=40),"ΜΕΤΡΙΟΣ ΚΑΠΝΙΣΤΗΣ",np.where(df["kapnistikes_synithies_devided_by_20"]>40,"ΒΑΡΥΣ ΚΑΠΝΙΣΤΗΣ",np.where(df["kapnistikes_synithies_devided_by_20"].isna(),np.nan,np.nan)))))
+  df["pack/years_CAT"]=np.where(df["pack/years"]<1,"ΜΗ ΚΑΠΝΙΣΤΗΣ",np.where((df["pack/years"]>=1)&(df["pack/years"]<=20),"ΗΠΙΟΣ ΚΑΠΝΙΣΤΗΣ",np.where((df["pack/years"]>20)&(df["pack/years"]<=40),"ΜΕΤΡΙΟΣ ΚΑΠΝΙΣΤΗΣ",np.where(df["pack/years"]>40,"ΒΑΡΥΣ ΚΑΠΝΙΣΤΗΣ",np.where(df["pack/years"].isna(),np.nan,np.nan)))))
   #Καρδιαγγειακός κίνδυνος
   df["kardiagiakos_kindynos_CAT"]=np.where(df["kardiagiakos_kindynos"]<1,"ΧΑΜΗΛΟΣ ΚΙΝΔΥΝΟΣ",np.where((df["kardiagiakos_kindynos"]>=1)&(df["kardiagiakos_kindynos"]<5),"ΜΕΤΡΙΟΣ ΚΙΝΔΥΝΟΣ",np.where((df["kardiagiakos_kindynos"]>=5)&(df["kardiagiakos_kindynos"]<10),"ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ",np.where(df["kardiagiakos_kindynos"]>=10,"ΠΟΛΥ ΥΨΗΛΟΣ ΚΙΝΔΥΝΟΣ",np.where(df["kardiagiakos_kindynos"].isna(),np.nan,np.nan)))))
   #Ακοολογικός έλεγχος (Ακουόγραμα)
@@ -2423,22 +2423,22 @@ def main():
         with col1:
           #Times gia synartisi
           try:
-            val=round((df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().loc["ΜΗ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().sum())*100,1)
+            val=round((df_filtered["pack/years_CAT"].value_counts().loc["ΜΗ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["pack/years_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val=00.00
           
           try:
-            val2=round((df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().loc["ΗΠΙΟΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().sum())*100,1)
+            val2=round((df_filtered["pack/years_CAT"].value_counts().loc["ΗΠΙΟΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["pack/years_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
           try:
-            val3=round((df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().loc["ΜΕΤΡΙΟΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().sum())*100,1)
+            val3=round((df_filtered["pack/years_CAT"].value_counts().loc["ΜΕΤΡΙΟΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["pack/years_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val3=00.00
 
           try:
-            val4=round((df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().loc["ΒΑΡΥΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["kapnistikes_synithies_devided_by_20_CAT"].value_counts().sum())*100,1)
+            val4=round((df_filtered["pack/years_CAT"].value_counts().loc["ΒΑΡΥΣ ΚΑΠΝΙΣΤΗΣ"]/df_filtered["pack/years_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val4=00.00
 
@@ -2450,7 +2450,7 @@ def main():
 
           with col2:
             #Times gia sinartisi
-            value=df_filtered["kapnistikes_synithies_devided_by_20"]
+            value=df_filtered["pack/years_CAT"]
             
             #Call of the function
             fig_kpis_hist=kpis_hist(value)
