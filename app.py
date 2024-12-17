@@ -1881,17 +1881,17 @@ def main():
         with col1:
           #Times gia synartisi
           try:
-            val=round((df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().loc["ΘΕΤΙΚΟ"]/df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().sum())*100,1)
+            val=round((df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().loc["ΑΡΝΗΤΙΚΟ"]/df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val=00.00
           
           try:
-            val2=round((df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().loc["ΑΡΝΗΤΙΚΟ"]/df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().sum())*100,1)
+            val2=round((df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().loc["ΘΕΤΙΚΟ"]/df_filtered["olika_anti_a_ipatitidas_CAT"].value_counts().sum())*100,1)
           except KeyError:
             val2=00.00
 
           #Call of the function
-          fig_two_cat_pie=two_cat_pie (val,val2,"ΘΕΤΙΚΟ","ΑΡΝΗΤΙΚΟ")
+          fig_two_cat_pie=two_cat_pie (val,val2,"ΑΡΝΗΤΙΚΟ","ΘΕΤΙΚΟ")
 
           #Show the plot
           st.plotly_chart(fig_two_cat_pie, use_container_width=True,config={'displayModeBar': False},key="Ergastiriakes30")
