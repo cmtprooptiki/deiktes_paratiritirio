@@ -45,8 +45,8 @@ def main():
   # Export from vidavo:
   df=pd.read_excel("Export_Vidavo_sep_2024_final.xlsx")
 
-  st.write(df)
-  st.write(df.dtypes)
+  # st.write(df)
+  # st.write(df.dtypes)
   # Lista Ergazomenwn:
   lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
   # st.write(lista_erg)
