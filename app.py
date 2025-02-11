@@ -46,7 +46,7 @@ def main():
   df=pd.read_excel("Export_Vidavo_sep_2024_final.xlsx")
 
   st.write(df)
-  st.write(df.dtypes)
+  st.write(df.info())
   # Lista Ergazomenwn:
   lista_erg=pd.read_excel("lista_ergazomenwn.xlsx")
   # st.write(lista_erg)
