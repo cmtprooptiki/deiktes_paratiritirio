@@ -60,7 +60,8 @@ def main():
 
   #Calculation of "Hlikiakes klaseis - Eti Ekthesis" in Categorical Format:
   st.write(df)
-
+  df["gender"] = np.where(df["gender"]=='None',"nogender","nogender")
+  st.write(df)
 
   #Ηλικιακές Κλάσεις
   df["age_group"]=np.where((df["patient_age"]>=18)&(df["patient_age"]<=34),"18-34",np.where((df["patient_age"]>=35)&(df["patient_age"]<=44),"35-44",np.where((df["patient_age"]>=45)&(df["patient_age"]<=54),"45-54",np.where((df["patient_age"]>=55)&(df["patient_age"]<=64),"55-64",np.where(df["patient_age"]>=65,"65+",np.where(df["patient_age"].isna(),np.nan,np.nan))))))
