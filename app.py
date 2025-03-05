@@ -60,7 +60,7 @@ def main():
 
   #Calculation of "Hlikiakes klaseis - Eti Ekthesis" in Categorical Format:
   st.write(df)
-  df["gender"] = np.where(df["gender"]=='None',"nogender","nogender")
+  df["gender"] = np.where(df["gender"]=='None',"nogender",df["gender"])
   st.write(df)
 
   #Ηλικιακές Κλάσεις
