@@ -3014,7 +3014,7 @@ def main():
           st.plotly_chart(fig, use_container_width=True,config={'displayModeBar': False})
       with col2:
         with stylable_container(
-        key="Ergatika2",
+        key="Ergatika3",
             css_styles="""
                 {
                     background-color: white;
